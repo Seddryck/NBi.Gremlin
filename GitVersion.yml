@@ -1,0 +1,10 @@
+mode: ContinuousDelivery
+branches:
+  dev(elop)?(ment)?$:
+    tag: beta
+  features?[/-]:
+    tag: alpha
+  releases?[/-]:
+    tag: RC
+ignore:
+  sha: []

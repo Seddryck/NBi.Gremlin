@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NBi.Gremlin</id>
+    <version>$version$</version>
+    <authors>Cédric L. Charlier</authors>
+    <owners>Cédric L. Charlier</owners>
+    <licenseUrl>https://github.com/Seddryck/NBi.Gremlin/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://www.nbi.io</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Seddryck/nbi/gh-pages/img/logo-2x.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>This package contains the Tinkerpop Gremlin extension for the testing framework NBi (check at http://www.nbi.io)</summary>
+    <description>This package contains the Tinkerpop Gremlin extension for the testing framework NBi (check at http://www.nbi.io)</description>
+	<releaseNotes>Check the release notes at https://github.com/Seddryck/NBi.Gremlin/releases/v$version$</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Test NBi Gremlin Tinkerpop</tags>
+	<dependencies>
+		$depList$
+	</dependencies>
+  </metadata>
+</package>
