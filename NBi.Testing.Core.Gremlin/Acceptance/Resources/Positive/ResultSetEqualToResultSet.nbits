@@ -9,7 +9,7 @@
     <system-under-test>
       <resultSet>
         <query>
-          g.V('thomas').outE('knows').inV().hasLabel('person').outE('knows').inV().hasLabel('person')
+          g.V().has('firstName', 'Thomas').outE('knows').inV().hasLabel('person').outE('knows').inV().hasLabel('person')
         </query>
       </resultSet>
     </system-under-test>
@@ -52,7 +52,7 @@
     <system-under-test>
       <resultSet>
         <query>
-          g.V().project('FirstName','KnowsCount').by('firstName').by(out().Count())
+          g.V().project('FirstName','KnowsCount').by('firstName').by(out().count())
         </query>
       </resultSet>
     </system-under-test>

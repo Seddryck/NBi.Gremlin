@@ -18,16 +18,16 @@ namespace NBi.Testing.Core.Gremlin
         private string[] Statements
         {
             get => new[]
-{
-            "g.V().Drop()"
-            , "g.addV('person').property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
-            , "g.addV('person').property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
-            , "g.addV('person').property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
-            , "g.addV('person').property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
-            , "g.V('thomas').addE('knows').to(g.V('mary'))"
-            , "g.V('thomas').addE('knows').to(g.V('ben'))"
-            , "g.V('ben').addE('knows').to(g.V('robin'))"
-        };
+            {
+                "g.V().drop()"
+                , "g.addV('person').property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
+                , "g.addV('person').property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
+                , "g.addV('person').property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
+                , "g.addV('person').property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
+                , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Mary'))"
+                , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Ben'))"
+                , "g.V().has('firstName','Ben').addE('knows').to(g.V().has('firstName','Robin'))"
+            };
         }
 
         [SetUp]
@@ -67,18 +67,17 @@ namespace NBi.Testing.Core.Gremlin
                     default:
                         throw new ArgumentException($"Can't create database {collectionId}: {collectionResponse.StatusCode}");
                 }
-
-                var gremlinConnectionStringBuilder = new DbConnectionStringBuilder() { ConnectionString = ConnectionStringReader.GetGremlin() };
-
-                FillDatabase(
-                    gremlinConnectionStringBuilder["hostname"].ToString(),
-                    Int32.Parse(gremlinConnectionStringBuilder["port"].ToString()),
-                    Boolean.Parse(gremlinConnectionStringBuilder["enablessl"].ToString()),
-                    gremlinConnectionStringBuilder["username"].ToString(),
-                    gremlinConnectionStringBuilder["password"].ToString()
-                );
             }
 
+            var gremlinConnectionStringBuilder = new DbConnectionStringBuilder() { ConnectionString = ConnectionStringReader.GetGremlin() };
+
+            FillDatabase(
+                gremlinConnectionStringBuilder["hostname"].ToString(),
+                Int32.Parse(gremlinConnectionStringBuilder["port"].ToString()),
+                Boolean.Parse(gremlinConnectionStringBuilder["enablessl"].ToString()),
+                gremlinConnectionStringBuilder["username"].ToString(),
+                gremlinConnectionStringBuilder["password"].ToString()
+            );
         }
 
         private void FillDatabase(string hostname, int port, bool enableSsl, string username, string password)
@@ -87,7 +86,7 @@ namespace NBi.Testing.Core.Gremlin
 
             using (var gremlinClient = new GremlinClient(gremlinServer, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType))
             {
-                var task = gremlinClient.SubmitWithSingleResultAsync<Int64>("g.V().Count()");
+                var task = gremlinClient.SubmitWithSingleResultAsync<Int64>("g.V().count()");
                 task.Wait();
                 if (task.Result != 4)
                 {
