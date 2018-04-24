@@ -5,12 +5,15 @@ environment:
     secure: 4FuAR/X6tZkLQOE8SBvQnxMIPvmjESSTd7b/SaCtjsoWiw/ai0j6rNSppORzOqgIawCvs0pIeD13ZQlKsRwyOO0HZffj1l6FEyA2juaqKwsONlY7fkLH7XKPmu5+iT/k
 init:
 - cmd: git config --global core.autocrlf true
-#install:
-# The Gremlin API is not supported on the emulator. The only way to use GRemlin and CosmosDb is to use the real service
+install:
+# The Gremlin API is not supported on the emulator. The only way to use Gremlin and CosmosDb is to use the real service
 #- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
 #- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
 #- ps: Start-Process "start-emulator.cmd"
 #- ps: .\wait-connect-cosmosdb.ps1
+
+# Install the Tinkerpop-server
+- ps: .\install-tinkerpop-server.ps1
 before_build:
 - cmd: >-
     gitversion /l console /output buildserver /updateAssemblyInfo
@@ -24,9 +27,14 @@ after_build:
 
     .\.packages\package-NBi-Gremlin.ps1 $nuget_version
 
-    .\testing-override-connectionString.ps1 $env:AzureAuthKey
 test_script:
-- cmd: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll
+- ps: .\testing-override-azure-cosmosdb-connectionString.ps1 $env:AzureAuthKey
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Unit /result=result.unit.xml
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.azure.xml
+- ps: .\testing-upload-result.ps1 'azure'
+- ps: .\testing-override-tinkerpop-server-connectionString.ps1
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.tinkerpop.xml
+- ps: .\testing-upload-result.ps1 'tinkerpop'
 artifacts:
 - path: NBi.Core.Gremlin\bin\Debug
   name: NBi.Gremlin

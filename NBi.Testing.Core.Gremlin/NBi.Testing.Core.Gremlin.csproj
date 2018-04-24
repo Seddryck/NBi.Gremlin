@@ -301,11 +301,11 @@
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Acceptance\GremlinRuntimeOverrider.cs" />
+    <Compile Include="TestSuiteSetup.cs" />
     <Compile Include="ConnectionStringReader.cs" />
     <Compile Include="Integration\Query\Command\GremlinCommandFactoryTest.cs" />
     <Compile Include="Integration\Query\Execution\GremlinExecutionEngineTest.cs" />
     <Compile Include="Properties\ProjectAssemblyInfo.cs" />
-    <Compile Include="TestSuiteSetup.cs" />
     <Compile Include="Unit\Configuration\Extension\ExtensionAnalyzerTest.cs" />
     <Compile Include="Unit\Query\Command\GremlinCommandFactoryTest.cs" />
     <Compile Include="Unit\Query\Execution\ExecutionEngineFactoryTest.cs" />
@@ -321,9 +321,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
-    <None Include="ConnectionString.AppVeyor.config" />
+    <None Include="ConnectionString.azure.config" />
     <None Include="ConnectionString.config" />
     <MyOptionalItems Include="ConnectionString.user.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </MyOptionalItems>
+    <MyOptionalItems Include="ConnectionString.tinkerpop.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </MyOptionalItems>
     <None Include="packages.config" />
