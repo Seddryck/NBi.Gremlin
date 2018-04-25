@@ -28,7 +28,7 @@ Note that all the tests are not executed on this environment due to limitations 
 Artefact provided by this CI:
 
 - NBi.Gremlin.zip contains the dll needed to extend NBi 
-- The tests are run on the Azure CosmosDb platform.
+- The tests are run on the Azure CosmosDb platform and on a Tinkerpop Server
 
 ## Code ##
 NBi is using **Git** as DCVS and the code is hosted on [Github](https://github.com/Seddryck/NBi.Gremlin). 
