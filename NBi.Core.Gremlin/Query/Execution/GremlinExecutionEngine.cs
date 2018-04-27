@@ -1,7 +1,6 @@
 ﻿using NBi.Core.Gremlin.Query.Command;
 using NBi.Core.Gremlin.Query.Client;
-using NBi.Core.Query;
-using NBi.Core.Query.Execution;
+using NBi.Extensibility.Query;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -10,11 +9,12 @@ using System.Diagnostics;
 using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
+using NBi.Extensibility;
 
 namespace NBi.Core.Gremlin.Query.Execution
 {
     [SupportedCommandType(typeof(GremlinCommandOperation))]
-    internal class GremlinExecutionEngine : IExecutionEngine
+    internal class GremlinExecutionEngine : Extensibility.Query.IExecutionEngine
     {
         protected GremlinCommandOperation Command { get; }
         protected GremlinClientOperation Client { get; }

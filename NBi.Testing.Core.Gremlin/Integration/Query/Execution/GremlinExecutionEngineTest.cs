@@ -8,6 +8,7 @@ using NBi.Core.Gremlin.Query.Client;
 using NBi.Core.Gremlin.Query.Command;
 using NBi.Core.Gremlin.Query.Execution;
 using Moq;
+using NBi.Extensibility.Query;
 
 namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
 {
