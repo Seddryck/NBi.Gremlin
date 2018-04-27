@@ -31,10 +31,10 @@ Write-Host "Found $($dependencies.Count) dependencies ..."
 $depList = $dependencies.Values -join [Environment]::NewLine + "`t`t"
 
 #For NBi.Gremlin (dll)
-$lib = "$root\NBi.Gremlin\lib\461\"
+$lib = "$root\NBi.Gremlin\lib\net46\"
 If (Test-Path $lib)
 {
-	Remove-Item $lib -recurse
+	Remove-Item $root\NBi.Gremlin\lib -recurse
 }
 new-item -Path $lib -ItemType directory
 new-item -Path $root\..\.nupkg -ItemType directory -force
