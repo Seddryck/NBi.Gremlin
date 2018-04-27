@@ -6,8 +6,6 @@ using NUnit.Framework;
 using Moq;
 using NBi.Core.Gremlin.Query.Client;
 using NBi.Core.Gremlin.Query.Command;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace NBi.Testing.Core.Gremlin.Integration.Query.Command
 {

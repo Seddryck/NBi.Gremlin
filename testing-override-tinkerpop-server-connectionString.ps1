@@ -1,14 +1,9 @@
-param(
-    [parameter(Mandatory=$true)]
-    [string]$azureGremlinConnectionString
-)
-
 $root = (split-path -parent $MyInvocation.MyCommand.Definition)
 if ($env:APPVEYOR)
 {
-    Write-Host "Replacing the content of the *.user.config file"
+    Write-Host "Replacing the content of the *.user.config file by *.tinkerpop.config"
 
-    $content = (Get-Content $root\NBi.Testing.Core.Gremlin\ConnectionString.appVeyor.config -Encoding UTF8) 
+    $content = (Get-Content $root\NBi.Testing.Core.Gremlin\ConnectionString.tinkerpop.config -Encoding UTF8) 
     $content = $content -replace '\$AzureAuthKey\$',$azureGremlinConnectionString
     $content | Out-File $root\NBi.Testing.Core.Gremlin\bin\Debug\ConnectionString.user.config -Encoding UTF8
 

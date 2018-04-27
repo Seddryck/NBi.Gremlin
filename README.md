@@ -22,13 +22,12 @@ NBi and this extension are available on the terms of Apache 2.0. NBi is also usi
 The list of bugs and feature's requests for NBi.Gremlin is hosted on [GitHub](https://github.com/Seddryck/NBi.Gremlin/issues)
 
 ## Continuous Integration ##
-A continuous integration service is available on AppVeyor at [https://ci.appveyor.com/project/Seddryck/nbi.gremlin]
-Note that all the tests are not executed on this environment due to limitations in the availability of some components.
+A continuous integration service is available on [AppVeyor](https://ci.appveyor.com/project/Seddryck/nbi.gremlin).
 
 Artefact provided by this CI:
 
 - NBi.Gremlin.zip contains the dll needed to extend NBi 
-- The tests are run on a CosmosDb emulator platform.
+- The tests are run on the Azure CosmosDb platform and on a Tinkerpop Server
 
 ## Code ##
 NBi is using **Git** as DCVS and the code is hosted on [Github](https://github.com/Seddryck/NBi.Gremlin). 

@@ -1,0 +1,1 @@
+"C:\apache-tinkerpop-gremlin-server\apache-tinkerpop-gremlin-server-3.3.2\bin\gremlin-server.bat"

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NBi.Core.Gremlin.Query.Client
 {
-    class GremlinClient : NBi.Core.Query.Client.IClient
+    class GremlinClient : Extensibility.Query.IClient
     {
         public const string HostnameToken = "hostname";
         public const string PortToken = "port";

@@ -8,6 +8,7 @@ using NBi.Core.Gremlin.Query.Client;
 using NBi.Core.Gremlin.Query.Command;
 using NBi.Core.Gremlin.Query.Execution;
 using Moq;
+using NBi.Extensibility.Query;
 
 namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
 {
@@ -120,11 +121,9 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
                         inVs.Add(row.ItemArray[i]);
                 }
 
-            foreach (var expectedInV in new[] { "mary", "ben", "robin" })
-                Assert.That(inVs, Has.Member(expectedInV));
-
-            foreach (var expectedOutV in new[] { "thomas", "ben" })
-                Assert.That(outVs, Has.Member(expectedOutV));
+            Assert.That(inVs, Has.Count.EqualTo(3));
+            Assert.That(outVs, Has.Count.EqualTo(3));
+            Assert.That(outVs.Distinct().Count(), Is.EqualTo(2));
 
             foreach (DataRow row in ds.Tables[0].Rows)
             {
@@ -140,7 +139,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         public void Execute_ProjectionOfObjects_DataSetFilled()
         {
             GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
-            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().project('FirstName','KnowsCount').by('firstName').by(out().Count())");
+            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().project('FirstName','KnowsCount').by('firstName').by(out().count())");
             GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
             var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
@@ -175,7 +174,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         public void Execute_Integer_ScalarReturned()
         {
             GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
-            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().Count()");
+            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().count()");
             GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
             var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
@@ -188,7 +187,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         public void Execute_String_ScalarReturned()
         {
             GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
-            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V('mary').values('lastName')");
+            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().has('firstName','Mary').values('lastName')");
             GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
             var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
@@ -201,7 +200,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         public void Execute_NullString_ScalarReturned()
         {
             GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
-            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V('thomas').values('lastName')");
+            var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().has('firstName','Thomas').values('lastName')");
             GremlinCommandOperation commandOperation = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
             var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), commandOperation);

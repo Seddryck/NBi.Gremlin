@@ -3,7 +3,6 @@ using NBi.Core.Configuration;
 using NBi.Core.Gremlin.Query.Command;
 using NBi.Core.Gremlin.Query.Execution;
 using NBi.Core.Gremlin.Query.Client;
-using NBi.Core.Query;
 using NBi.Core.Query.Command;
 using NBi.Core.Query.Execution;
 using NBi.Core.Query.Client;
@@ -13,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NBi.Extensibility.Query;
 
 namespace NBi.Testing.Core.Gremlin.Unit.Query.Execution
 {

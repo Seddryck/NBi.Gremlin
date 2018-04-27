@@ -1,5 +1,4 @@
-﻿using NBi.Core.Query.Client;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NBi.Core.Gremlin.Query.Client
 {
-    public class GremlinClientFactory : IClientFactory
+    public class GremlinClientFactory : Extensibility.Query.IClientFactory
     {
 
         public bool CanHandle(string connectionString)
@@ -24,7 +23,7 @@ namespace NBi.Core.Gremlin.Query.Client
             => connectionStringBuilder.ContainsKey(GremlinClient.ApiToken) && ((string)connectionStringBuilder[GremlinClient.ApiToken]).ToLowerInvariant() == api.ToLowerInvariant();
 
 
-        public IClient Instantiate(string connectionString)
+        public Extensibility.Query.IClient Instantiate(string connectionString)
         {
             var connectionStringBuilder = new DbConnectionStringBuilder() { ConnectionString = connectionString };
             var hostname = (string)connectionStringBuilder[GremlinClient.HostnameToken];

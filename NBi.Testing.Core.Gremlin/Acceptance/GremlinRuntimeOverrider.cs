@@ -13,9 +13,6 @@ namespace NBi.Testing.Core.Gremlin.Acceptance
         [SetUp]
         public void Setup()
         {
-            var tsSetup = new TestSuiteSetup();
-            tsSetup.Init();
-
             CopyConnectionStringUserConfig();
         }
 

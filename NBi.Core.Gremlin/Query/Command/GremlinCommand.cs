@@ -1,5 +1,5 @@
 ﻿using NBi.Core.Gremlin.Query.Client;
-using NBi.Core.Query.Command;
+using NBi.Extensibility.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,4 @@
-mode: ContinuousDelivery
+mode: ContinuousDeployment
 branches:
   dev(elop)?(ment)?$:
     tag: beta
