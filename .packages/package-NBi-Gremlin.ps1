@@ -31,14 +31,15 @@ Write-Host "Found $($dependencies.Count) dependencies ..."
 $depList = $dependencies.Values -join [Environment]::NewLine + "`t`t"
 
 #For NBi.Gremlin (dll)
-$lib = "$root\NBi.Gremlin\lib\net46\"
+$lib = "$root\NBi.Gremlin\lib"
 If (Test-Path $lib)
 {
-	Remove-Item $root\NBi.Gremlin\lib -recurse
+	Remove-Item $lib -recurse
 }
-new-item -Path $lib -ItemType directory
+
 new-item -Path $root\..\.nupkg -ItemType directory -force
-Copy-Item $root\..\NBi.Core.Gremlin\bin\Debug\NBi.*Gremlin*.dll $lib
+new-item -Path $lib\net46\ -ItemType directory
+Copy-Item $root\..\NBi.Core.Gremlin\bin\Debug\NBi.*Gremlin*.dll $lib\net46\
 
 Write-Host "Setting .nuspec version tag to $version"
 
