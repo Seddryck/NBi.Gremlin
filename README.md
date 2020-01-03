@@ -2,13 +2,6 @@
 # NBi.Gremlin #
 NBi.Gremlin is an extension to the [NBi testing framework](http://www.nbi.io) (add-on to NUnit) for **Business Intelligence** and **Data centric** applications. This extension lets you run tests defined within NBi on any Tinkerpop enabled database using the Gremlin language.
 
-[![Build status](https://img.shields.io/badge/website-nbi.io-fe762d.svg)](http://www.nbi.io)
-[![Build status](https://ci.appveyor.com/api/projects/status/ifvoj0m9g4n1cxdm?svg=true)](https://ci.appveyor.com/project/Seddryck/nbi-gremlin)
-![Still maintained](https://img.shields.io/maintenance/yes/2020.svg)
-[![nuget](https://img.shields.io/nuget/v/NBi.Gremlin.svg)](https://www.nuget.org/packages?q=nbi)
-[![licence badge](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](https://github.com/Seddryck/NBi.Gremlin/blob/master/LICENSE)
-[![stars badge](https://img.shields.io/github/stars/Seddryck/NBi.Gremlin.svg)](https://github.com/Seddryck/NBi.Gremlin/stargazers)
-----------------
 **Social media:** [![website](https://img.shields.io/badge/website-nbi.io-fe762d.svg)](http://www.nbi.io)
 [![twitter badge](https://img.shields.io/badge/twitter-@Seddryck-blue.svg?style=flat&logo=twitter)](https://twitter.com/Seddryck)
 
