@@ -51,5 +51,6 @@ Thumbs.db
 
 #Nuget
 *.compiled.nuspec
+.packages/NBi.Gremlin/
 .nupkg/
 .vs/
