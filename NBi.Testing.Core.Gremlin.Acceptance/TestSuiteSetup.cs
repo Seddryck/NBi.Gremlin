@@ -41,35 +41,36 @@ namespace NBi.Testing.Core.Gremlin
                 var databaseId = cosmosdbConnectionStringBuilder["database"].ToString();
                 var collectionId = cosmosdbConnectionStringBuilder["collection"].ToString();
 
-            //    using (var client = new DocumentClient(endpoint, authKey))
-            //    {
-            //        var databaseResponse = client.CreateDatabaseIfNotExistsAsync(new Database() { Id = databaseId }).Result;
-            //        switch (databaseResponse.StatusCode)
-            //        {
-            //            case System.Net.HttpStatusCode.OK:
-            //                Console.WriteLine($"Database {databaseId} already exists.");
-            //                break;
-            //            case System.Net.HttpStatusCode.Created:
-            //                Console.WriteLine($"Database {databaseId} created.");
-            //                break;
-            //            default:
-            //                throw new ArgumentException($"Can't create database {databaseId}: {databaseResponse.StatusCode}");
-            //        }
+                using (var client = new DocumentClient(endpoint, authKey))
+                {
+                    var database = new Database() { Id = databaseId };
+                    var databaseResponse = client.CreateDatabaseIfNotExistsAsync(database).Result;
+                    switch (databaseResponse.StatusCode)
+                    {
+                        case System.Net.HttpStatusCode.OK:
+                            Console.WriteLine($"Database {databaseId} already exists.");
+                            break;
+                        case System.Net.HttpStatusCode.Created:
+                            Console.WriteLine($"Database {databaseId} created.");
+                            break;
+                        default:
+                            throw new ArgumentException($"Can't create database {databaseId}: {databaseResponse.StatusCode}");
+                    }
 
-            //        var databaseUri = UriFactory.CreateDatabaseUri(databaseId);
-            //        var collectionResponse = client.CreateDocumentCollectionIfNotExistsAsync(databaseUri, new DocumentCollection() { Id = collectionId }).Result;
-            //        switch (collectionResponse.StatusCode)
-            //        {
-            //            case System.Net.HttpStatusCode.OK:
-            //                Console.WriteLine($"Collection {collectionId} already exists.");
-            //                break;
-            //            case System.Net.HttpStatusCode.Created:
-            //                Console.WriteLine($"Database {collectionId} created.");
-            //                break;
-            //            default:
-            //                throw new ArgumentException($"Can't create database {collectionId}: {collectionResponse.StatusCode}");
-            //        }
-            //    }
+                    var databaseUri = UriFactory.CreateDatabaseUri(databaseId);
+                    var collectionResponse = client.CreateDocumentCollectionIfNotExistsAsync(databaseUri, new DocumentCollection() { Id = collectionId }).Result;
+                    switch (collectionResponse.StatusCode)
+                    {
+                        case System.Net.HttpStatusCode.OK:
+                            Console.WriteLine($"Collection {collectionId} already exists.");
+                            break;
+                        case System.Net.HttpStatusCode.Created:
+                            Console.WriteLine($"Database {collectionId} created.");
+                            break;
+                        default:
+                            throw new ArgumentException($"Can't create database {collectionId}: {collectionResponse.StatusCode}");
+                    }
+                }
             }
             var gremlinConnectionStringBuilder = new DbConnectionStringBuilder() { ConnectionString = ConnectionStringReader.GetGremlin() };
 
