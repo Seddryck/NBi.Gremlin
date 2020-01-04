@@ -190,38 +190,26 @@
     <Reference Include="Moq, Version=4.13.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.13.0\lib\net45\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.dll</HintPath>
+    <Reference Include="NBi.Core, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Core.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2012, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.SqlServer2012.dll</HintPath>
+    <Reference Include="NBi.Extensibility, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Extensibility.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2014, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.SqlServer2014.dll</HintPath>
+    <Reference Include="NBi.Framework, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2016, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.SqlServer2016.dll</HintPath>
+    <Reference Include="NBi.NUnit, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.NUnit.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Core.SqlServer2017, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.SqlServer2017.dll</HintPath>
+    <Reference Include="NBi.NUnit.Runtime, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Extensibility, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Extensibility.dll</HintPath>
+    <Reference Include="NBi.Testing, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Testing.dll</HintPath>
     </Reference>
-    <Reference Include="NBi.Framework, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="NBi.NUnit, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.NUnit.dll</HintPath>
-    </Reference>
-    <Reference Include="NBi.NUnit.Runtime, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="NBi.Testing, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Testing.dll</HintPath>
-    </Reference>
-    <Reference Include="NBi.Xml, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Xml.dll</HintPath>
+    <Reference Include="NBi.Xml, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Xml.dll</HintPath>
     </Reference>
     <Reference Include="NCalc, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NCalc-Edge.1.5.0\lib\net35\NCalc.dll</HintPath>
