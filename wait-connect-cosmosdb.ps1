@@ -1,19 +1,18 @@
 $attempt = 0; $max = 5
-$client = New-Object System.Net.Sockets.TcpClient([System.Net.Sockets.AddressFamily]::InterNetwork)
-
 do {
+	$client = New-Object System.Net.Sockets.TcpClient([System.Net.Sockets.AddressFamily]::InterNetwork)
 	try {    
-		$client.Connect("127.0.0.1", 8081)
-		write-host "CosmosDB started"
+		$client.Connect("127.0.0.1", 8901)
+		write-host "Gremlin endpoint listening. Connection successful."
 	}
 	
 	catch {
 		$client.Close()
 		if($attempt -eq $max) {
-			write-host "CosmosDB was not started"
+			write-host "Gremlin endpoint is not listening. Aborting connection."
 		} else {
 			[int]$sleepTime = 5 * (++$attempt)
-			write-host "CosmosDB is not started. Retry after $sleepTime seconds..."
+			write-host "Gremlin endpoint is not listening. Retry after $sleepTime seconds..."
 			sleep $sleepTime;
 		}
 	}

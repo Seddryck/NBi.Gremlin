@@ -10,7 +10,7 @@ using NBi.Extensibility;
 
 namespace NBi.Core.Gremlin.Query.Command
 {
-    class GremlinCommandFactory : ICommandFactory
+    public class GremlinCommandFactory : ICommandFactory
     {
         public bool CanHandle(IClient client) => client is GremlinClient;
 
@@ -25,10 +25,10 @@ namespace NBi.Core.Gremlin.Query.Command
             return OnInstantiate(clientOperation, commandOperation);
         }
 
-        protected ICommand OnInstantiate(GremlinClientOperation clientOperation, GremlinCommandOperation commandOperation)
+        private ICommand OnInstantiate(GremlinClientOperation clientOperation, GremlinCommandOperation commandOperation)
             => new GremlinCommand(clientOperation, commandOperation);
 
-        protected GremlinCommandOperation BuildCommandOperation(GremlinClientOperation clientOperation, IQuery query, ITemplateEngine engine)
+        private GremlinCommandOperation BuildCommandOperation(GremlinClientOperation clientOperation, IQuery query, ITemplateEngine engine)
         {
             var statementText = query.Statement;
 

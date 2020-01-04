@@ -29,9 +29,5 @@ namespace NBi.Testing.Core.Gremlin
                 return "ConnectionString.config";
             return "";
         }
-
-        
-
-
     }
 }

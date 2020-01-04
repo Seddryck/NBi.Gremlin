@@ -14,14 +14,14 @@ using NBi.Extensibility;
 namespace NBi.Core.Gremlin.Query.Execution
 {
     [SupportedCommandType(typeof(GremlinCommandOperation))]
-    internal class GremlinExecutionEngine : Extensibility.Query.IExecutionEngine
+    public class GremlinExecutionEngine : IExecutionEngine
     {
-        protected GremlinCommandOperation Command { get; }
-        protected GremlinClientOperation Client { get; }
+        private GremlinCommandOperation Command { get; }
+        private GremlinClientOperation Client { get; }
 
         private readonly Stopwatch stopWatch = new Stopwatch();
 
-        protected internal GremlinExecutionEngine(GremlinClientOperation client, GremlinCommandOperation command)
+        internal GremlinExecutionEngine(GremlinClientOperation client, GremlinCommandOperation command)
         {
             Client = client;
             Command = command;
@@ -29,14 +29,13 @@ namespace NBi.Core.Gremlin.Query.Execution
 
         public DataSet Execute()
         {
-            DataSet ds = null;
             StartWatch();
-            ds = OnExecuteDataSet(Command.Client, Command.PreparedStatement);
+            var ds = OnExecuteDataSet(Command.Client, Command.PreparedStatement);
             StopWatch();
             return ds;
         }
 
-        protected DataSet OnExecuteDataSet(GremlinClientOperation client, string query)
+        internal DataSet OnExecuteDataSet(GremlinClientOperation client, string query)
         {
             var ds = new DataSet();
             var dt = new DataTable();
@@ -100,19 +99,14 @@ namespace NBi.Core.Gremlin.Query.Execution
 
         public object ExecuteScalar()
         {
-            object result = null;
             StartWatch();
-            result = OnExecuteScalar(Command.Client, Command.PreparedStatement);
+            var result = OnExecuteScalar(Command.Client, Command.PreparedStatement);
             StopWatch();
             return result;
         }
 
-        public object OnExecuteScalar(GremlinClientOperation client, string query)
+        internal object OnExecuteScalar(GremlinClientOperation client, string query)
         {
-            var ds = new DataSet();
-            var dt = new DataTable();
-            ds.Tables.Add(dt);
-
             var task = client.Execute(query);
             task.Wait();
             var result = task.Result;
@@ -123,14 +117,13 @@ namespace NBi.Core.Gremlin.Query.Execution
 
         public IEnumerable<T> ExecuteList<T>()
         {
-            List<T> result = null;
             StartWatch();
-            result = OnExecuteList<T>(Command.Client, Command.PreparedStatement);
+            var result = OnExecuteList<T>(Command.Client, Command.PreparedStatement);
             StopWatch();
             return result;
         }
 
-        public List<T> OnExecuteList<T>(GremlinClientOperation client, string query)
+        internal List<T> OnExecuteList<T>(GremlinClientOperation client, string query)
         {
             var list = new List<T>();
 
@@ -143,15 +136,12 @@ namespace NBi.Core.Gremlin.Query.Execution
             return list;
         }
 
-        protected void StartWatch()
-        {
-            stopWatch.Restart();
-        }
+        protected void StartWatch() => stopWatch.Restart();
 
         protected void StopWatch()
         {
             stopWatch.Stop();
-            Trace.WriteLineIf(NBiTraceSwitch.TraceInfo, $"Time needed to execute query [Gremlin]: {stopWatch.Elapsed:d'.'hh':'mm':'ss'.'fff'ms'}");
+            Trace.WriteLineIf(NBiTraceSwitch.TraceInfo, $"Time needed to execute query [Gremlin]: {Elapsed:d'.'hh':'mm':'ss'.'fff'ms'}");
         }
 
         protected internal TimeSpan Elapsed { get => stopWatch.Elapsed; }

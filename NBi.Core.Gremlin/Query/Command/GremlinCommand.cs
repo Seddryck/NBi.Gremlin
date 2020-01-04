@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace NBi.Core.Gremlin.Query.Command
 {
-    class GremlinCommand : ICommand
+    public class GremlinCommand : ICommand
     {
         public object Implementation { get; }
         public object Client { get; }
 
-        public GremlinCommand(GremlinClientOperation client, GremlinCommandOperation query)
+        internal GremlinCommand(GremlinClientOperation client, GremlinCommandOperation query)
         {
             Client = client;
             Implementation = query;

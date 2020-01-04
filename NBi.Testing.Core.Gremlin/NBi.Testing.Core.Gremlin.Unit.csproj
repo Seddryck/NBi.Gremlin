@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnitTestAdapter.2.2.0\build\NUnitTestAdapter.props" Condition="Exists('..\packages\NUnitTestAdapter.2.2.0\build\NUnitTestAdapter.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F76C1C03-99EB-45DD-8FF4-EDA2DA02D529}</ProjectGuid>
+    <ProjectGuid>{73DAC40D-671C-44BB-A67D-C1F7B42B1326}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NBi.Gremlin.Bindings</RootNamespace>
-    <AssemblyName>NBi.Gremlin.Bindings</AssemblyName>
+    <AssemblyName>NBi.Testing.Core.Gremlin</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,12 +25,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>NBi.Testing.Core.Gremlin</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
@@ -67,6 +72,9 @@
     </Reference>
     <Reference Include="Microsoft.AnalysisServices.SPClient.Interfaces, Version=18.0.2.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.18.0.2\lib\net45\Microsoft.AnalysisServices.SPClient.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Documents.Client, Version=1.22.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.DocumentDB.1.22.0\lib\net45\Microsoft.Azure.Documents.Client.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.AzureStorageEnum, Version=14.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\lib\net40\Microsoft.SqlServer.AzureStorageEnum.dll</HintPath>
@@ -206,7 +214,7 @@
       <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Core.SqlServer2017.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Extensibility, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Extensibility.dll</HintPath>
+      <HintPath>..\packages\NBi.Extensibility.1.22.0-beta0060\lib\net461\NBi.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Framework, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NBi.Framework.1.22.0-beta0060\lib\net461\NBi.Framework.dll</HintPath>
@@ -246,9 +254,6 @@
     </Reference>
     <Reference Include="RestSharp, Version=106.6.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Sprache, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sprache.2.1.2\lib\net45\Sprache.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -337,6 +342,18 @@
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Properties\ProjectAssemblyInfo.cs" />
+    <Compile Include="Configuration\Extension\ExtensionAnalyzerTest.cs" />
+    <Compile Include="Query\Command\GremlinCommandFactoryTest.cs" />
+    <Compile Include="Query\Execution\ExecutionEngineFactoryTest.cs" />
+    <Compile Include="Query\Client\GremlinClientTest.cs" />
+    <Compile Include="Query\Client\GremlinClientFactoryTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NBi.Core.Gremlin\NBi.Core.Gremlin.csproj">
@@ -344,19 +361,22 @@
       <Name>NBi.Core.Gremlin</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll.config" "$(SolutionDir)NBi.Core.Gremlin\bin\debug\NBi.Core.Gremlin.dll.config"</PostBuildEvent>
-  </PropertyGroup>
-  <Import Project="..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets" Condition="Exists('..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets')" />
+  <Target Name="CopyOptionalFiles" AfterTargets="Build">
+    <Message Text="Copy optional files" />
+    <CreateItem Include="@(MyOptionalItems)">
+      <Output ItemName="ItemsThatNeedToBeCopied" TaskParameter="Include" />
+    </CreateItem>
+    <Copy SourceFiles="@(ItemsThatNeedToBeCopied)" DestinationFolder="$(OutputPath)" Condition="Exists('%(RootDir)%(Directory)%(Filename)%(Extension)')" />
+  </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Azure.DocumentDB.1.22.0\build\Microsoft.Azure.DocumentDB.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Azure.DocumentDB.1.22.0\build\Microsoft.Azure.DocumentDB.targets'))" />
     <Error Condition="!Exists('..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnitTestAdapter.2.2.0\build\NUnitTestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnitTestAdapter.2.2.0\build\NUnitTestAdapter.props'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Azure.DocumentDB.1.22.0\build\Microsoft.Azure.DocumentDB.targets" Condition="Exists('..\packages\Microsoft.Azure.DocumentDB.1.22.0\build\Microsoft.Azure.DocumentDB.targets')" />
+  <Import Project="..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets" Condition="Exists('..\packages\Microsoft.SqlServer.SqlManagementObjects.140.17235.0\build\net40\Microsoft.SqlServer.SqlManagementObjects.targets')" />
 </Project>

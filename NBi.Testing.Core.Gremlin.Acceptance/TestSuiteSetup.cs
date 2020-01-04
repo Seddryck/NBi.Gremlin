@@ -20,10 +20,10 @@ namespace NBi.Testing.Core.Gremlin
             get => new[]
             {
                 "g.V().drop()"
-                , "g.addV('person').property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
-                , "g.addV('person').property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
-                , "g.addV('person').property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
-                , "g.addV('person').property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
+                , "g.addV('person').property('pk', 1).property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
+                , "g.addV('person').property('pk', 1).property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
+                , "g.addV('person').property('pk', 1).property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
+                , "g.addV('person').property('pk', 1).property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
                 , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Mary'))"
                 , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Ben'))"
                 , "g.V().has('firstName','Ben').addE('knows').to(g.V().has('firstName','Robin'))"
@@ -41,35 +41,35 @@ namespace NBi.Testing.Core.Gremlin
                 var databaseId = cosmosdbConnectionStringBuilder["database"].ToString();
                 var collectionId = cosmosdbConnectionStringBuilder["collection"].ToString();
 
-                using (var client = new DocumentClient(endpoint, authKey))
-                {
-                    var databaseResponse = client.CreateDatabaseIfNotExistsAsync(new Database() { Id = databaseId }).Result;
-                    switch (databaseResponse.StatusCode)
-                    {
-                        case System.Net.HttpStatusCode.OK:
-                            Console.WriteLine($"Database {databaseId} already exists.");
-                            break;
-                        case System.Net.HttpStatusCode.Created:
-                            Console.WriteLine($"Database {databaseId} created.");
-                            break;
-                        default:
-                            throw new ArgumentException($"Can't create database {databaseId}: {databaseResponse.StatusCode}");
-                    }
+            //    using (var client = new DocumentClient(endpoint, authKey))
+            //    {
+            //        var databaseResponse = client.CreateDatabaseIfNotExistsAsync(new Database() { Id = databaseId }).Result;
+            //        switch (databaseResponse.StatusCode)
+            //        {
+            //            case System.Net.HttpStatusCode.OK:
+            //                Console.WriteLine($"Database {databaseId} already exists.");
+            //                break;
+            //            case System.Net.HttpStatusCode.Created:
+            //                Console.WriteLine($"Database {databaseId} created.");
+            //                break;
+            //            default:
+            //                throw new ArgumentException($"Can't create database {databaseId}: {databaseResponse.StatusCode}");
+            //        }
 
-                    var databaseUri = UriFactory.CreateDatabaseUri(databaseId);
-                    var collectionResponse = client.CreateDocumentCollectionIfNotExistsAsync(databaseUri, new DocumentCollection() { Id = collectionId }).Result;
-                    switch (collectionResponse.StatusCode)
-                    {
-                        case System.Net.HttpStatusCode.OK:
-                            Console.WriteLine($"Collection {collectionId} already exists.");
-                            break;
-                        case System.Net.HttpStatusCode.Created:
-                            Console.WriteLine($"Database {collectionId} created.");
-                            break;
-                        default:
-                            throw new ArgumentException($"Can't create database {collectionId}: {collectionResponse.StatusCode}");
-                    }
-                }
+            //        var databaseUri = UriFactory.CreateDatabaseUri(databaseId);
+            //        var collectionResponse = client.CreateDocumentCollectionIfNotExistsAsync(databaseUri, new DocumentCollection() { Id = collectionId }).Result;
+            //        switch (collectionResponse.StatusCode)
+            //        {
+            //            case System.Net.HttpStatusCode.OK:
+            //                Console.WriteLine($"Collection {collectionId} already exists.");
+            //                break;
+            //            case System.Net.HttpStatusCode.Created:
+            //                Console.WriteLine($"Database {collectionId} created.");
+            //                break;
+            //            default:
+            //                throw new ArgumentException($"Can't create database {collectionId}: {collectionResponse.StatusCode}");
+            //        }
+            //    }
             }
             var gremlinConnectionStringBuilder = new DbConnectionStringBuilder() { ConnectionString = ConnectionStringReader.GetGremlin() };
 
@@ -102,7 +102,6 @@ namespace NBi.Testing.Core.Gremlin
             }
 
             Console.WriteLine($"Tests will be run on '{hostname}:{port}'");
-
         }
     }
 }
