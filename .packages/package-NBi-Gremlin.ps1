@@ -9,7 +9,7 @@ Write-Host "Static set of dependencies ..."
 
 $dependencies = @{}
 $dependencies.add("Gremlin.Net", "<dependency id=`"Gremlin.Net`" version=`"3.3.2`" />")
-$dependencies.add("NBi.Framework", "<dependency id=`"NBi.Framework`" version=`"1.22.0-beta0055`" />")
+$dependencies.add("NBi.Framework", "<dependency id=`"NBi.Framework`" version=`"[1.22.0-beta0055, 2.0)`" />")
 
 Write-Host "Found $($dependencies.Count) dependencies ..."
 $depList = $dependencies.Values -join [Environment]::NewLine + "`t`t"
