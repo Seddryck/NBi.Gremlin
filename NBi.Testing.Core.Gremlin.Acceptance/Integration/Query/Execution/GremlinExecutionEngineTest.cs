@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NBi.Core.Query;
 using NUnit.Framework;
 using System.Data;
 using NBi.Core.Gremlin.Query.Client;
@@ -46,7 +45,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_Vertex_DataSetFilled()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V()");
             GremlinCommandOperation gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
@@ -91,11 +90,11 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_Edge_DataSetFilled()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.E()");
-            GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
+            var gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
-            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
+            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), gremlinQuery);
 
             var ds = engine.Execute();
             Assert.That(ds.Tables, Has.Count.EqualTo(1));
@@ -138,11 +137,11 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_ProjectionOfObjects_DataSetFilled()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().project('FirstName','KnowsCount').by('firstName').by(out().count())");
-            GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
+            var gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
-            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
+            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), gremlinQuery);
 
             var ds = engine.Execute();
             Assert.That(ds.Tables, Has.Count.EqualTo(1));
@@ -173,11 +172,11 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_Integer_ScalarReturned()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().count()");
-            GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
+            var gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
-            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
+            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), gremlinQuery);
 
             var count = engine.ExecuteScalar();
             Assert.That(count, Is.EqualTo(4));
@@ -186,11 +185,11 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_String_ScalarReturned()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().has('firstName','Mary').values('lastName')");
-            GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
+            var gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
-            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
+            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), gremlinQuery);
 
             var count = engine.ExecuteScalar();
             Assert.That(count, Is.EqualTo("Andersen"));
@@ -199,7 +198,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_NullString_ScalarReturned()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().has('firstName','Thomas').values('lastName')");
             GremlinCommandOperation commandOperation = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
@@ -212,11 +211,11 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         [Test]
         public void Execute_ListOfString_ListReturned()
         {
-            GremlinClient client = new GremlinClientFactory().Instantiate(ConnectionStringReader.GetGremlin()) as GremlinClient;
+            var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
             var statement = Mock.Of<IQuery>(x => x.Statement == "g.V().values('lastName')");
-            GremlinCommandOperation cosmosdbQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
+            var gremlinQuery = new GremlinCommandFactory().Instantiate(client, statement).Implementation as GremlinCommandOperation;
 
-            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), cosmosdbQuery);
+            var engine = new GremlinExecutionEngine((GremlinClientOperation)(client.CreateNew()), gremlinQuery);
 
             var count = engine.ExecuteList<string>();
             Assert.That(count, Has.Member("Andersen"));

@@ -18,15 +18,23 @@ namespace NBi.Testing.Core.Gremlin.Unit.Configuration.Extension
         {
             var analyzer = new ExtensionAnalyzer();
             var types = analyzer.Execute("NBi.Core.Gremlin");
-            Assert.That(types.Count(), Is.EqualTo(3));
+            Assert.That(types.Count(), Is.EqualTo(4));
         }
 
         [Test]
-        public void Execute_GremlinAssembly_IClientFactory()
+        public void Execute_GremlinAssembly_GremlinLikeClientFactory()
         {
             var analyzer = new ExtensionAnalyzer();
             var types = analyzer.Execute("NBi.Core.Gremlin");
-            Assert.That(types, Has.Member(typeof(GremlinClientFactory)));
+            Assert.That(types, Has.Member(typeof(GremlinLikeClientFactory)));
+        }
+
+        [Test]
+        public void Execute_GremlinAssembly_OfficialCosmosDbClientFactory()
+        {
+            var analyzer = new ExtensionAnalyzer();
+            var types = analyzer.Execute("NBi.Core.Gremlin");
+            Assert.That(types, Has.Member(typeof(OfficialCosmosDbClientFactory)));
         }
 
         [Test]

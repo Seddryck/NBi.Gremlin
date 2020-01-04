@@ -25,7 +25,7 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Execution
             public IReadOnlyDictionary<Type, IDictionary<string, string>> Extensions =>
                 new Dictionary<Type, IDictionary<string, string>>()
                 {
-                    { typeof(GremlinClientFactory),   new Dictionary<string, string>() },
+                    { typeof(GremlinLikeClientFactory),   new Dictionary<string, string>() },
                     { typeof(GremlinCommandFactory),  new Dictionary<string, string>() },
                     { typeof(GremlinExecutionEngine), new Dictionary<string, string>() },
                 };
