@@ -42,10 +42,11 @@
     </Compile>
     <Compile Include="Properties\ProjectAssemblyInfo.cs" />
     <Compile Include="Configuration\Extension\ExtensionAnalyzerTest.cs" />
+    <Compile Include="Query\Client\OfficialCosmosDbClientFactoryTest.cs" />
     <Compile Include="Query\Command\GremlinCommandFactoryTest.cs" />
     <Compile Include="Query\Execution\ExecutionEngineFactoryTest.cs" />
     <Compile Include="Query\Client\GremlinClientTest.cs" />
-    <Compile Include="Query\Client\GremlinClientFactoryTest.cs" />
+    <Compile Include="Query\Client\GremlinLikeClientFactoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

@@ -18,7 +18,7 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Command
         [Test]
         public void CanHandle_GremlinClient_True()
         {
-            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd");
+            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd", string.Empty);
             var factory = new GremlinCommandFactory();
             Assert.That(factory.CanHandle(client), Is.True);
         }
@@ -34,7 +34,7 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Command
         [Test]
         public void Instantiate_GremlinClientAndQuery_CommandNotNull()
         {
-            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd");
+            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd", string.Empty);
             var query = Mock.Of<IQuery>();
             var factory = new GremlinCommandFactory();
             var command = factory.Instantiate(client, query);
@@ -44,7 +44,7 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Command
         [Test]
         public void Instantiate_GremlinClientAndQuery_CommandImplementationCorrectType()
         {
-            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd");
+            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd", string.Empty);
             var query = Mock.Of<IQuery>();
             var factory = new GremlinCommandFactory();
             var command = factory.Instantiate(client, query);
@@ -56,7 +56,7 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Command
         [Test]
         public void Instantiate_GremlinClientAndQuery_ClientCorrectType()
         {
-            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd");
+            var client = new GremlinClient("host", 431, true, "user", "p@ssw0rd", string.Empty);
             var query = Mock.Of<IQuery>();
             var factory = new GremlinCommandFactory();
             var command = factory.Instantiate(client, query);
