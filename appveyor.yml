@@ -40,10 +40,10 @@ test_script:
 
 - ps: netstat -an | select-string -pattern "127.0.0.1:8[0-9][0-9][0-9]"
 - ps: Get-Process -Name "*Cosmos*"
-#- ps: .\wait-connect-cosmosdb.ps1
-#- ps: .\testing-override-cosmosdb-connectionString.ps1
-#- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
-#- ps: .\testing-upload-result.ps1 'cosmosdb'
+- ps: .\wait-connect-cosmosdb.ps1
+- ps: .\testing-override-cosmosdb-connectionString.ps1
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
+- ps: .\testing-upload-result.ps1 'cosmosdb'
 
 
 artifacts:
