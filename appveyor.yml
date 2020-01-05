@@ -28,7 +28,7 @@ after_build:
     .\.packages\package-NBi-Gremlin.ps1 $nuget_version
 
 test_script:
-- ps: nunit-console-x86 NBi.Testing.Core.Gremlin.Unit\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Unit /result=result.unit.xml
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin.Unit\bin\debug\NBi.Testing.Core.Gremlin.Unit.dll /run:NBi.Testing.Core.Gremlin.Unit /result=result.unit.xml
 
 - ps: .\testing-override-cosmosdb-connectionString.ps1
 - ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
