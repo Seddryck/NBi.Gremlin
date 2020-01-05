@@ -56,7 +56,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="app.config" />
-    <None Include="ConnectionString.azure.config" />
     <None Include="ConnectionString.config" />
     <MyOptionalItems Include="ConnectionString.user.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -64,6 +63,7 @@
     <MyOptionalItems Include="ConnectionString.tinkerpop.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </MyOptionalItems>
+    <None Include="ConnectionString.cosmosdb.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
