@@ -18,3 +18,4 @@ using System.Runtime.InteropServices;
 
 //Reference the testing class to ensure access to internal members
 [assembly: InternalsVisibleTo("NBi.Testing.Core.Gremlin")]
+[assembly: InternalsVisibleTo("NBi.Testing.Core.Gremlin.Unit")]
