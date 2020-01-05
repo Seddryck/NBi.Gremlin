@@ -7,9 +7,9 @@ init:
 - cmd: git config --global core.autocrlf true
 install:
 # Install the Azure CosmosDb Emaulator with the option /EnableGremlin
-- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
-- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
-- ps: Start-Process "start-emulator.cmd"
+#- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
+#- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
+#- ps: Start-Process "start-emulator.cmd"
 
 # Install the Tinkerpop-server
 - ps: .\install-tinkerpop-server.ps1
@@ -34,10 +34,10 @@ test_script:
 - ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Integration /exclude:OnlyCosmosDb /result=result.tinkerpop.xml
 - ps: .\testing-upload-result.ps1 'tinkerpop'
 
-- ps: .\wait-connect-cosmosdb.ps1
-- ps: .\testing-override-cosmosdb-connectionString.ps1
-- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
-- ps: .\testing-upload-result.ps1 'cosmosdb'
+#- ps: .\wait-connect-cosmosdb.ps1
+#- ps: .\testing-override-cosmosdb-connectionString.ps1
+#- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
+#- ps: .\testing-upload-result.ps1 'cosmosdb'
 
 
 artifacts:
