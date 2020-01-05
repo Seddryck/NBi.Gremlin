@@ -12,6 +12,7 @@ install:
 - ps: Get-ChildItem -Path "C:\Program Files\Azure Cosmos DB Emulator\" -Filter *.exe -Force -ErrorAction SilentlyContinue
 - ps: Start-Process "start-emulator.cmd"
 - ps: netstat -an | select-string -pattern "127.0.0.1:8[0-9][0-9][0-9]"
+- ps: Get-Process -Name "*Cosmos*"
 
 # Install the Tinkerpop-server
 - ps: .\install-tinkerpop-server.ps1
@@ -37,6 +38,7 @@ test_script:
 - ps: .\testing-upload-result.ps1 'tinkerpop'
 
 - ps: netstat -an | select-string -pattern "127.0.0.1:8[0-9][0-9][0-9]"
+- ps: Get-Process -Name "*Cosmos*"
 #- ps: .\wait-connect-cosmosdb.ps1
 #- ps: .\testing-override-cosmosdb-connectionString.ps1
 #- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
