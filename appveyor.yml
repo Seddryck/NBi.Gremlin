@@ -9,7 +9,8 @@ install:
 # Install the Azure CosmosDb Emaulator with the option /EnableGremlin
 #- wmic product where name="Azure Cosmos DB Emulator" call uninstall
 #- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
-- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
+#- cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
+- ps: Write-Host "Version of ComosDB Emulator:" ([System.Diagnostics.FileVersionInfo]::GetVersionInfo("C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe").FileVersion)
 - ps: Get-ChildItem -Path "C:\Program Files\Azure Cosmos DB Emulator\" -Filter *.exe -Force -ErrorAction SilentlyContinue
 - ps: Start-Process "start-emulator.cmd"
 - ps: netstat -an | select-string -pattern "127.0.0.1:8[0-9][0-9][0-9]"
