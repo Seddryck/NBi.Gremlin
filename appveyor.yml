@@ -30,6 +30,7 @@ after_build:
 test_script:
 - ps: nunit-console-x86 NBi.Testing.Core.Gremlin.Unit\bin\debug\NBi.Testing.Core.Gremlin.Unit.dll /run:NBi.Testing.Core.Gremlin.Unit /result=result.unit.xml
 
+- ps: .\wait-connect-cosmosdb.ps1
 - ps: .\testing-override-cosmosdb-connectionString.ps1
 - ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.cosmosdb.xml
 - ps: .\testing-upload-result.ps1 'cosmosdb'
