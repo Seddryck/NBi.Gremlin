@@ -1,8 +1,3 @@
-param(
-    [parameter(Mandatory=$true)]
-    [string]$azureGremlinConnectionString
-)
-
 $root = (split-path -parent $MyInvocation.MyCommand.Definition)
 if ($env:APPVEYOR)
 {
