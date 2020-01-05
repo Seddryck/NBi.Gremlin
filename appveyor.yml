@@ -7,8 +7,8 @@ init:
 - cmd: git config --global core.autocrlf true
 install:
 # Install the Azure CosmosDb Emaulator with the option /EnableGremlin
-- wmic product where name="Azure Cosmos DB Emulator" call uninstall
-- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
+#- wmic product where name="Azure Cosmos DB Emulator" call uninstall
+#- ps: Start-FileDownload 'https://aka.ms/cosmosdb-emulator' -FileName 'c:\projects\cosmos-db.msi'
 - cmd: cmd /c start /wait msiexec /i "c:\projects\cosmos-db.msi" /qn /quiet /norestart /log install.log  
 - ps: Get-ChildItem -Path "C:\Program Files\Azure Cosmos DB Emulator\" -Filter *.exe -Force -ErrorAction SilentlyContinue
 - ps: Start-Process "start-emulator.cmd"
