@@ -31,7 +31,7 @@ test_script:
 - ps: nunit-console-x86 NBi.Testing.Core.Gremlin.Unit\bin\debug\NBi.Testing.Core.Gremlin.Unit.dll /run:NBi.Testing.Core.Gremlin.Unit /result=result.unit.xml
 
 - ps: .\testing-override-tinkerpop-server-connectionString.ps1
-- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Acceptance,NBi.Testing.Core.Gremlin.Integration /result=result.tinkerpop.xml
+- ps: nunit-console-x86 NBi.Testing.Core.Gremlin\bin\debug\NBi.Testing.Core.Gremlin.dll /run:NBi.Testing.Core.Gremlin.Integration /exclude:OnlyCosmosDb /result=result.tinkerpop.xml
 - ps: .\testing-upload-result.ps1 'tinkerpop'
 
 - ps: .\wait-connect-cosmosdb.ps1

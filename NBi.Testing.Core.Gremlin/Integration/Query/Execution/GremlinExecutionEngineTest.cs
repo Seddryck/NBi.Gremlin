@@ -43,6 +43,7 @@ namespace NBi.Testing.Core.Gremlin.Integration.Query.Execution
         #endregion
 
         [Test]
+        [Category("OnlyCosmosDb")]
         public void Execute_Vertex_DataSetFilled()
         {
             var client = new GremlinLikeClientFactory().Instantiate(ConnectionStringReader.GetGremlin());
