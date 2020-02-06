@@ -71,8 +71,8 @@
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Deedle, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Deedle.2.0.4\lib\net45\Deedle.dll</HintPath>
+    <Reference Include="Deedle, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Deedle.2.1.0\lib\net45\Deedle.dll</HintPath>
     </Reference>
     <Reference Include="Dynamitey, Version=2.0.9.136, Culture=neutral, PublicKeyToken=cbf53ea3aeb972c6, processorArchitecture=MSIL">
       <HintPath>..\packages\Dynamitey.2.0.9.136\lib\net40\Dynamitey.dll</HintPath>
@@ -89,42 +89,42 @@
     <Reference Include="MarkdownLog, Version=0.9.64.0, Culture=neutral, PublicKeyToken=2b6c562c5dd991ab, processorArchitecture=MSIL">
       <HintPath>..\packages\MarkdownLog.0.9.64\lib\netstandard2.0\MarkdownLog.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=18.0.2.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.18.0.2\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=18.2.3.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.18.2.3\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AnalysisServices.SPClient.Interfaces, Version=18.0.2.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.18.0.2\lib\net45\Microsoft.AnalysisServices.SPClient.Interfaces.dll</HintPath>
+    <Reference Include="Microsoft.AnalysisServices.SPClient.Interfaces, Version=18.2.3.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AnalysisServices.AdomdClient.retail.amd64.18.2.3\lib\net45\Microsoft.AnalysisServices.SPClient.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Moq, Version=4.13.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.13.0\lib\net45\Moq.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Core, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Core.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.Core.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Extensibility, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Extensibility.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.Extensibility.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Framework, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Framework.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.Framework.dll</HintPath>
     </Reference>
     <Reference Include="NBi.NUnit, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.NUnit.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="NBi.NUnit.Runtime, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.NUnit.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Testing, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Testing.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.Testing.dll</HintPath>
     </Reference>
     <Reference Include="NBi.Xml, Version=1.22.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NBi.Framework.1.22.0-beta0055\lib\net461\NBi.Xml.dll</HintPath>
+      <HintPath>..\packages\NBi.Framework.1.22.0\lib\net461\NBi.Xml.dll</HintPath>
     </Reference>
     <Reference Include="NCalc, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NCalc-Edge.1.5.0\lib\net35\NCalc.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
@@ -141,8 +141,8 @@
     <Reference Include="PocketCsvReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PocketCsvReader.1.0.0\lib\net461\PocketCsvReader.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=106.6.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=106.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.9.0\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
