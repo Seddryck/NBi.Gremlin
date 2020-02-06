@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBi.Testing.Core.Gremlin", "NBi.Testing.Core.Gremlin\NBi.Testing.Core.Gremlin.csproj", "{73DAC40D-671C-44BB-A67D-C1F7B42B1326}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBi.Core.Gremlin", "NBi.Core.Gremlin\NBi.Core.Gremlin.csproj", "{BF427A68-47C4-48B8-83EF-CE01DDEB2B59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ECB132D2-7057-4E69-9BCA-B80EBD6BFB03}"
@@ -15,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		install-tinkerpop-server.ps1 = install-tinkerpop-server.ps1
 		README.md = README.md
 		start-emulator.cmd = start-emulator.cmd
-		testing-override-azure-cosmosdb-connectionString.ps1 = testing-override-azure-cosmosdb-connectionString.ps1
+		testing-override-cosmosdb-connectionString.ps1 = testing-override-cosmosdb-connectionString.ps1
 		testing-override-tinkerpop-server-connectionString.ps1 = testing-override-tinkerpop-server-connectionString.ps1
 		testing-upload-result.ps1 = testing-upload-result.ps1
 		wait-connect-cosmosdb.ps1 = wait-connect-cosmosdb.ps1
@@ -23,16 +21,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBi.Gremlin.Bindings", "NBi.Gremlin.Bindings\NBi.Gremlin.Bindings.csproj", "{F76C1C03-99EB-45DD-8FF4-EDA2DA02D529}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packaging", "Packaging", "{3ACFAAF8-7E91-492D-A428-BB6B27551AE3}"
+	ProjectSection(SolutionItems) = preProject
+		.packages\NBi.Gremlin.nuspec = .packages\NBi.Gremlin.nuspec
+		.packages\package-NBi-Gremlin.ps1 = .packages\package-NBi-Gremlin.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBi.Testing.Core.Gremlin", "NBi.Testing.Core.Gremlin\NBi.Testing.Core.Gremlin.csproj", "{73DAC40D-671C-44BB-A67D-C1F7B42B2611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBi.Testing.Core.Gremlin.Unit", "NBi.Testing.Core.Gremlin.Unit\NBi.Testing.Core.Gremlin.Unit.csproj", "{73DAC40D-671C-44BB-A67D-C1F7B42B1326}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF427A68-47C4-48B8-83EF-CE01DDEB2B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF427A68-47C4-48B8-83EF-CE01DDEB2B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF427A68-47C4-48B8-83EF-CE01DDEB2B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,6 +45,14 @@ Global
 		{F76C1C03-99EB-45DD-8FF4-EDA2DA02D529}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F76C1C03-99EB-45DD-8FF4-EDA2DA02D529}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F76C1C03-99EB-45DD-8FF4-EDA2DA02D529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B2611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B2611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B2611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B2611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DAC40D-671C-44BB-A67D-C1F7B42B1326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

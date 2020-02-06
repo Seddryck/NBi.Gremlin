@@ -1,11 +1,7 @@
 ﻿using Moq;
-using NBi.Core.Configuration;
 using NBi.Core.Gremlin.Query.Command;
 using NBi.Core.Gremlin.Query.Execution;
 using NBi.Core.Gremlin.Query.Client;
-using NBi.Core.Query.Command;
-using NBi.Core.Query.Execution;
-using NBi.Core.Query.Client;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -13,6 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NBi.Extensibility.Query;
+using NBi.Core.Configuration;
+using NBi.Core.Query.Execution;
+using NBi.Core.Query.Client;
+using NBi.Core.Query.Command;
 
 namespace NBi.Testing.Core.Gremlin.Unit.Query.Execution
 {
@@ -22,12 +22,13 @@ namespace NBi.Testing.Core.Gremlin.Unit.Query.Execution
 
         private class GremlinConfig : IExtensionsConfiguration
         {
-            public IReadOnlyCollection<Type> Extensions => new List<Type>()
-            {
-                typeof(GremlinClientFactory),
-                typeof(GremlinCommandFactory),
-                typeof(GremlinExecutionEngine),
-            };
+            public IReadOnlyDictionary<Type, IDictionary<string, string>> Extensions =>
+                new Dictionary<Type, IDictionary<string, string>>()
+                {
+                    { typeof(GremlinLikeClientFactory),   new Dictionary<string, string>() },
+                    { typeof(GremlinCommandFactory),  new Dictionary<string, string>() },
+                    { typeof(GremlinExecutionEngine), new Dictionary<string, string>() },
+                };
         }
 
         [Test]

@@ -20,10 +20,10 @@ namespace NBi.Testing.Core.Gremlin
             get => new[]
             {
                 "g.V().drop()"
-                , "g.addV('person').property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
-                , "g.addV('person').property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
-                , "g.addV('person').property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
-                , "g.addV('person').property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
+                , "g.addV('person').property('pk', 1).property('id', 'thomas').property('firstName', 'Thomas').property('age', 44)"
+                , "g.addV('person').property('pk', 1).property('id', 'mary').property('firstName', 'Mary').property('lastName', 'Andersen').property('age', 39)"
+                , "g.addV('person').property('pk', 1).property('id', 'ben').property('firstName', 'Ben').property('lastName', 'Miller')"
+                , "g.addV('person').property('pk', 1).property('id', 'robin').property('firstName', 'Robin').property('lastName', 'Wakefield')"
                 , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Mary'))"
                 , "g.V().has('firstName','Thomas').addE('knows').to(g.V().has('firstName','Ben'))"
                 , "g.V().has('firstName','Ben').addE('knows').to(g.V().has('firstName','Robin'))"
@@ -43,7 +43,8 @@ namespace NBi.Testing.Core.Gremlin
 
                 using (var client = new DocumentClient(endpoint, authKey))
                 {
-                    var databaseResponse = client.CreateDatabaseIfNotExistsAsync(new Database() { Id = databaseId }).Result;
+                    var database = new Database() { Id = databaseId };
+                    var databaseResponse = client.CreateDatabaseIfNotExistsAsync(database).Result;
                     switch (databaseResponse.StatusCode)
                     {
                         case System.Net.HttpStatusCode.OK:
@@ -102,7 +103,6 @@ namespace NBi.Testing.Core.Gremlin
             }
 
             Console.WriteLine($"Tests will be run on '{hostname}:{port}'");
-
         }
     }
 }

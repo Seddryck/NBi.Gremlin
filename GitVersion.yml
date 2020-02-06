@@ -5,7 +5,7 @@ branches:
     tag: beta
   feature:
     regex: features?[/-]
-    tag: alpha
+    tag: alpha.{BranchName}
     source-branches: ['master', 'develop', 'feature', 'hotfix', 'support']
   release:
     regex: releases?[/-]
