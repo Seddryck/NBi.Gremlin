@@ -14,7 +14,7 @@ NBi.Gremlin is an extension to the [NBi testing framework](http://www.nbi.io) (a
 [![nuget](https://img.shields.io/nuget/vpre/NBi.Gremlin.svg?color=%23427682&label=Beta)](https://www.nuget.org/packages/NBi.Framework/)
 
 **Dev. activity:** [![GitHub last commit](https://img.shields.io/github/last-commit/Seddryck/nbi.gremlin.svg)](https://github.com/Seddryck/NBi.Gremlin/releases/latest)
-![Still maintained](https://img.shields.io/maintenance/yes/2020.svg)
+![Still maintained](https://img.shields.io/maintenance/yes/2021.svg)
 ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/Seddryck/NBi.Gremlin/v1.0/develop)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Seddryck/NBi.Gremlin)
 
