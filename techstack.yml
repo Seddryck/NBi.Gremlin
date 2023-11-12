@@ -1,0 +1,1149 @@
+repo_name: Seddryck/NBi.Gremlin
+report_id: dc5f1ba6c7b7b4cf04eb15ba2ea7e4e1
+repo_type: Public
+timestamp: '2023-11-12T20:21:54+00:00'
+requested_by: Seddryck
+provider: github
+branch: master
+detected_tools_count: 83
+tools:
+- name: ASP.NET
+  description: An open source web framework for building modern web apps and services
+    with .NET
+  website_url: https://www.asp.net/
+  version: 4.6.1
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png
+  detection_source_url: NBi.Core.Gremlin/NBi.Core.Gremlin.csproj
+  detection_source: NBi.Testing.Core.Gremlin/NBi.Testing.Core.Gremlin.csproj
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-22 08:54:46.000000000 Z
+- name: C#
+  description: Simple, general-purpose, object-oriented programming language for the
+    .NET platform
+  website_url: http://csharp.net
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source: Repo Metadata
+- name: F#
+  description: Strongly-typed, functional-first programming language for writing simple
+    code to solve complex problems
+  website_url: http://fsharp.org/
+  version: 4.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2155/yRNL7yTW.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-27 07:39:50.000000000 Z
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-05 00:43:40.000000000 Z
+- name: Castle Core
+  description: It provides common Castle Project abstractions including logging services
+  website_url: https://github.com/castleproject/Core
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Logging Tools
+  image_url: https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Moq
+  description: The most popular and friendly mocking framework for .NET
+  website_url: https://github.com/Moq/moq4
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/1628/1434934.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-27 07:39:50.000000000 Z
+- name: NUnit
+  description: An open-source unit testing framework
+  website_url: http://www.nunit.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Ninject
+  description: The ninja of .net dependency injectors
+  website_url: http://www.ninject.org
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Game Development
+  image_url: https://img.stackshare.io/service/3173/default_85e419b9c60b158340e534d5006d949015ec16e4.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-27 12:10:47.000000000 Z
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-22 08:54:46.000000000 Z
+- name: Visual Studio
+  description: State-of-the-art tools and services that you can use to create great
+    apps for devices, the cloud, and everything in between.
+  website_url: http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Integrated Development Environment
+  image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source: NBi.Gremlin.sln
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Microsoft Azure
+  description: Integrated cloud services and infrastructure to support computing,
+    database, analytics, mobile, and web scenarios.
+  website_url: https://azure.microsoft.com/en-us/
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Cloud Hosting
+  image_url: https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: PowerShell
+  description: A task automation and configuration management framework
+  website_url: https://docs.microsoft.com/en-us/powershell/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/3681/powershell-logo.png
+  detection_source: Repo Metadata
+- name: RestSharp
+  description: Simple REST and HTTP API Client for .NET
+  website_url: https://restsharp.dev/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: API Tools
+  image_url: https://img.stackshare.io/service/20915/default_445d4e39e5f74faa53e6902cd6d552ff56c3a0a3.png
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: Antlr
+  description: ANother Tool for Language Recognition
+  package_url: https://www.nuget.org/Antlr
+  version: 3.5.0
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13151/default_048f7c1081704627a12b8b5e168cfdbc9f28fb33.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Antlr3.Runtime
+  description: The runtime library for parsers generated by the C# target of ANTLR
+    3
+  package_url: https://www.nuget.org/Antlr3.Runtime
+  version: 3.5.1
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14561/default_2cdecae299b16f7e5120392b94415caf67b24d08.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Antlr4.StringTemplate
+  description: StringTemplate
+  package_url: https://www.nuget.org/Antlr4.StringTemplate
+  version: 4.0.6
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14774/default_d4bab497d6f953a185d2fc07e88b123334dde672.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Deedle
+  description: Deedle implements an efficient and robust frame and series data structures
+    for manipulating with structured data
+  package_url: https://www.nuget.org/Deedle
+  version: 2.1.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14739/default_ed2dff93c8ef09716d4634464fe3965af887d3ba.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: Dynamitey
+  description: ''
+  package_url: https://www.nuget.org/Dynamitey
+  version: 2.0.9
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14494/default_173ec891280076d3562de36695be599c5f63d489.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: FSharp.Core
+  description: FSharp.Core redistributables from Visual F# Tools version 10.6 For
+    F# 4.7
+  package_url: https://www.nuget.org/FSharp.Core
+  version: 4.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12867/default_d56a77cbb06d3dae6daef9669108e3e01d2494af.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: ImpromptuInterface
+  description: A Lightweight Duck Casting Framework for dynamic C#
+  package_url: https://www.nuget.org/ImpromptuInterface
+  version: 7.0.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13836/default_e1674c8c6a68d9256ef572438afba2230ecc5522.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Microsoft.AnalysisServices.AdomdClient
+  description: Microsoft.AnalysisServices.AdomdClient.dll file from Microsoft SQL
+    Server 2014 Feature Pack
+  package_url: https://www.nuget.org/Microsoft.AnalysisServices.AdomdClient
+  version: 12.0.2000
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/15479/default_3738187338acc57863a0dd0dda89ecbfed6fcc63.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:51.000000000 Z
+- name: Microsoft.Azure.DocumentDB
+  description: This client library enables client applications to connect to Azure
+    Cosmos DB via the SQL API
+  package_url: https://www.nuget.org/Microsoft.Azure.DocumentDB
+  version: 2.9.2
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13231/default_44258eb565a346d4baf5243c0df2a219253fec1a.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: Microsoft.CSharp
+  description: Provides support for compilation and code generation, including dynamic,
+    using the C# language
+  package_url: https://www.nuget.org/Microsoft.CSharp
+  version: 4.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12845/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: Microsoft.NETCore.Platforms
+  description: Provides runtime information required to resolve target framework,
+    platform, and runtime specific implementations of .NETCore packages
+  package_url: https://www.nuget.org/Microsoft.NETCore.Platforms
+  version: 1.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12907/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: Microsoft.SqlServer.SqlManagementObjects
+  description: The SQL Server Management Objects
+  package_url: https://www.nuget.org/Microsoft.SqlServer.SqlManagementObjects
+  version: 140.17235.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13830/default_4ee67dce9c0f5d6ba4c7dfc02ceb6746fd996f32.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-02-06 17:20:31.000000000 Z
+- name: Microsoft.Win32.Primitives
+  description: Provides common types for Win32-based libraries
+  package_url: https://www.nuget.org/Microsoft.Win32.Primitives
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13149/default_048f7c1081704627a12b8b5e168cfdbc9f28fb33.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: NETStandard.Library
+  description: A set of standard .NET APIs that are prescribed to be used and supported
+    together
+  package_url: https://www.nuget.org/NETStandard.Library
+  version: 1.6.1
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12843/default_0f5233770e71818507f2339042e7e61bef904e70.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-22 08:54:46.000000000 Z
+- name: NUnit.Runners
+  description: This package is now obsolete and has been replaced by the NUnit.Console
+    package
+  package_url: https://www.nuget.org/NUnit.Runners
+  version: 2.7.1
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13862/default_f71362d5cdd81a1583eb441b931fae9d72ff1211.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+- name: NUnitTestAdapter
+  description: The NUnit TestAdapter for Visual Studio 2012 and newer for NUnit 2
+  package_url: https://www.nuget.org/NUnitTestAdapter
+  version: 2.2.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14014/default_eda5fda8a13db51fe1af0908a714036e1ba79510.png
+  detection_source_url: NBi.Testing.Core.Gremlin.Unit/packages.config
+  detection_source: NBi.Testing.Core.Gremlin.Unit/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-05 00:43:40.000000000 Z
+- name: Newtonsoft.Json
+  description: Json.NET is a popular high-performance JSON framework for .NET
+  package_url: https://www.nuget.org/Newtonsoft.Json
+  version: 12.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/nuget/image.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2020-01-04 14:27:32.000000000 Z
+  vulnerabilities:
+  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+    detected_date: Jun 23
+    severity: high
+    first_patched: 13.0.1
+- name: Sprache
+  description: Sprache is a simple
+  package_url: https://www.nuget.org/Sprache
+  version: 2.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13233/default_cadeaa4a9968284dcd1223273394c410c31c9d09.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
+  last_updated_by: Cédric L. Charlier
+  last_updated_on: 2018-04-27 07:39:50.000000000 Z
+- name: System.AppContext
+  description: Provides the System.AppContext class, which allows access to the BaseDirectory
+    property and other application specific data
+  package_url: https://www.nuget.org/System.AppContext
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13144/default_a5e8cd728170fc92850284a53a17ff7deb73f318.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Buffers
+  description: Provides resource pooling of any type for performance-critical applications
+    that allocate and deallocate objects frequently
+  package_url: https://www.nuget.org/System.Buffers
+  version: 4.5.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13038/default_a0b0eac5a401515996bd8fc359ffcfbc844cbe90.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:56:26.000000000 Z
+- name: System.Collections
+  description: Provides classes that define generic collections
+  package_url: https://www.nuget.org/System.Collections
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12855/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Collections.Concurrent
+  description: Provides several thread-safe collection classes that should be used
+    in place of the corresponding types in the System.Collections.NonGeneric and System.Collections
+    packages when...
+  package_url: https://www.nuget.org/System.Collections.Concurrent
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12925/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Console
+  description: Provides the System.Console class, which represents the standard input,
+    output and error streams for console applications
+  package_url: https://www.nuget.org/System.Console
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12992/default_971bb108ce002c2032e407a9046135e1542c46c7.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Diagnostics.Debug
+  description: Provides classes and attributes that allows basic interaction with
+    a debugger
+  package_url: https://www.nuget.org/System.Diagnostics.Debug
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12887/default_e43fb8cd51d87352a1197706afa527de5c3baecd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Diagnostics.DiagnosticSource
+  description: Provides Classes that allow you to decouple code logging rich
+  package_url: https://www.nuget.org/System.Diagnostics.DiagnosticSource
+  version: 4.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13012/default_dd10728859f7e363ef13345d855b2daba48cace4.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Diagnostics.Tools
+  description: Provides attributes, such as GeneratedCodeAttribute and SuppresMessageAttribute,
+    that are emitted or consumed by analysis tools
+  package_url: https://www.nuget.org/System.Diagnostics.Tools
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12946/default_3bbc310dbe28a83b0e799743dc3f0afaa77665c9.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Diagnostics.Tracing
+  description: Provides class that enable you to create high performance tracing events
+    to be captured by event tracing for Windows
+  package_url: https://www.nuget.org/System.Diagnostics.Tracing
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13072/default_a057bdad489be3cb053d372a68695da4ac94962d.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Globalization
+  description: Provides classes that define culture-related information
+  package_url: https://www.nuget.org/System.Globalization
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12895/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Globalization.Calendars
+  description: Provides classes for performing date calculations using specific calendars,
+    including the Gregorian, Julian, Hijri and Korean calendars
+  package_url: https://www.nuget.org/System.Globalization.Calendars
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13335/default_9a849f196ca7930b27f663ae8f15c937ea1b49e5.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.IO
+  description: Provides base input and output
+  package_url: https://www.nuget.org/System.IO
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12901/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.IO.Compression
+  description: Provides classes that support the compression and decompression of
+    streams
+  package_url: https://www.nuget.org/System.IO.Compression
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12997/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.IO.Compression.ZipFile
+  description: Provides classes that support the compression and decompression of
+    streams using file system paths
+  package_url: https://www.nuget.org/System.IO.Compression.ZipFile
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13240/default_43ce02ab18bb400d4d6b410ac4dc3a50f87e634a.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.IO.FileSystem
+  description: Provides types that allow reading and writing to files and types that
+    provide basic file and directory support
+  package_url: https://www.nuget.org/System.IO.FileSystem
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12931/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.IO.FileSystem.Primitives
+  description: Provides common enumerations and exceptions for path-based I/O libraries
+  package_url: https://www.nuget.org/System.IO.FileSystem.Primitives
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13111/default_623cfb3f5700f77ec1aadc91de41d13f3aa2ae3d.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Linq
+  description: Provides classes and interfaces that supports queries that use Language-Integrated
+    Query
+  package_url: https://www.nuget.org/System.Linq
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12857/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Linq.Expressions
+  description: Provides classes, interfaces and enumerations that enable language-level
+    code expressions to be represented as objects in the form of expression trees
+  package_url: https://www.nuget.org/System.Linq.Expressions
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12924/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Memory
+  description: Provides types for efficient representation and pooling of managed
+  package_url: https://www.nuget.org/System.Memory
+  version: 4.5.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12974/default_d871263d8798790404638a4d3692cc70b6389166.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:56:26.000000000 Z
+- name: System.Net.Http
+  description: Provides a programming interface for modern HTTP applications
+  package_url: https://www.nuget.org/System.Net.Http
+  version: 4.3.4
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12860/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Net.Http.WinHttpHandler
+  description: Provides a message handler for HttpClient based on the WinHTTP interface
+    of Windows
+  package_url: https://www.nuget.org/System.Net.Http.WinHttpHandler
+  version: 4.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13507/default_311009104e9efa41dc477451d8d60c2d0cbe7895.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:56:26.000000000 Z
+  vulnerabilities:
+  - name: ASP.NET Core fails to properly validate web requests
+    cve_id: CVE-2017-0247
+    cve_url: https://github.com/advisories/GHSA-6xh7-4v2w-36q6
+    detected_date: Jan 28
+    severity: high
+    first_patched: 4.5.4
+- name: System.Net.Primitives
+  description: Provides common types for network-based libraries, including System.Net.IPAddress,
+    System.Net.IPEndPoint, and System.Net.CookieContainer
+  package_url: https://www.nuget.org/System.Net.Primitives
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12985/default_dd10728859f7e363ef13345d855b2daba48cace4.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Net.Sockets
+  description: Provides classes such as Socket, TcpClient and UdpClient, which enable
+    developers to send and receive data over the network
+  package_url: https://www.nuget.org/System.Net.Sockets
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13036/default_a0b0eac5a401515996bd8fc359ffcfbc844cbe90.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Net.WebSockets
+  description: Provides the System.Net.WebSockets.WebSocket abstract class and related
+    types to allow developers to implement the WebSocket protocol
+  package_url: https://www.nuget.org/System.Net.WebSockets
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13619/default_454cc9675bfcd9d7cf7256a128a70b1b339fad1e.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Net.WebSockets.Client
+  description: Provides the System.Net.WebSockets.ClientWebSocket class, which implements
+    the client role of the WebSockets protocol
+  package_url: https://www.nuget.org/System.Net.WebSockets.Client
+  version: 4.3.1
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13534/default_acafa9133bcbebb2b966c9340c23194c2f9bf7bc.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Numerics.Vectors
+  description: Provides hardware-accelerated numeric types, suitable for high-performance
+    processing and graphics applications
+  package_url: https://www.nuget.org/System.Numerics.Vectors
+  version: 4.4.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13087/default_1b8be57b16f1f491c0e5f67e5d1021f4df68ea30.png
+  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:56:26.000000000 Z
+- name: System.ObjectModel
+  description: Provides types and interfaces that allow the creation of observable
+    types that provide notifications to clients when changes are made to it
+  package_url: https://www.nuget.org/System.ObjectModel
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12994/default_971bb108ce002c2032e407a9046135e1542c46c7.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Reflection
+  description: Provides types that retrieve information about assemblies, modules,
+    members, parameters, and other entities in managed code by examining their metadata
+  package_url: https://www.nuget.org/System.Reflection
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12874/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Reflection.Extensions
+  description: Provides custom attribute extension methods for System.Reflection types
+  package_url: https://www.nuget.org/System.Reflection.Extensions
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12900/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Reflection.Primitives
+  description: Provides common enumerations for reflection-based libraries
+  package_url: https://www.nuget.org/System.Reflection.Primitives
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13006/default_12f7186a6d439da94c192c70c3589768d943782d.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Reflection.TypeExtensions
+  description: Provides extensions methods for System.Type that are designed to be
+    source-compatible with older framework reflection-based APIs
+  package_url: https://www.nuget.org/System.Reflection.TypeExtensions
+  version: 4.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12876/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Resources.ResourceManager
+  description: Provides classes and attributes that allow developers to create, store,
+    and manage various culture-specific resources used in an application
+  package_url: https://www.nuget.org/System.Resources.ResourceManager
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12898/default_1763b424d3c06c730dd020813f1a1a6ffb953bc2.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime
+  description: Provides the fundamental primitives
+  package_url: https://www.nuget.org/System.Runtime
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12849/default_0f5233770e71818507f2339042e7e61bef904e70.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime.Extensions
+  description: Provides commonly-used classes for performing mathematical functions,
+    conversions, string comparisons and querying environment information
+  package_url: https://www.nuget.org/System.Runtime.Extensions
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12872/default_1763b424d3c06c730dd020813f1a1a6ffb953bc2.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime.Handles
+  description: Provides base classes, including System.Runtime.InteropServices.CriticalHandle
+    and System.Runtime.InteropServices.SafeHandle, for types that represent operating
+    system handles
+  package_url: https://www.nuget.org/System.Runtime.Handles
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13103/default_9a42ff760d96a634e61dad6d7a7d76e2d1506229.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime.InteropServices
+  description: Provides types that support COM interop and platform invoke services
+  package_url: https://www.nuget.org/System.Runtime.InteropServices
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12908/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime.InteropServices.RuntimeInformation
+  description: Provides APIs to query about runtime and OS information
+  package_url: https://www.nuget.org/System.Runtime.InteropServices.RuntimeInformation
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12960/default_cd4457378b2b3dee674f43707df49edfbc5c04e5.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Runtime.Numerics
+  description: Provides the numeric types System.Numerics.BigInteger and System.Numerics.Complex,
+    which complement the numeric primitives, such as System.Byte, System.Double and
+    System.Int32
+  package_url: https://www.nuget.org/System.Runtime.Numerics
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13039/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Security.Cryptography.Algorithms
+  description: Provides base types for cryptographic algorithms, including hashing,
+    encryption, and signing operations
+  package_url: https://www.nuget.org/System.Security.Cryptography.Algorithms
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12929/default_039376cf26bae25623c106aea6185b89980a1e50.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Security.Cryptography.Encoding
+  description: Provides types for representing Abstract Syntax Notation One
+  package_url: https://www.nuget.org/System.Security.Cryptography.Encoding
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13179/default_42e87535b59c0cd77a89678c1c4ed24abc143f58.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Security.Cryptography.Primitives
+  description: Provides common types for the cryptographic libraries
+  package_url: https://www.nuget.org/System.Security.Cryptography.Primitives
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13109/default_f0c74e534077001eb65a152707758ce46a2dc970.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Security.Cryptography.X509Certificates
+  description: Provides types for reading, exporting and verifying Authenticode X.509
+    v3 certificates
+  package_url: https://www.nuget.org/System.Security.Cryptography.X509Certificates
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13009/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Text.Encoding
+  description: Provides base abstract encoding classes for converting blocks of characters
+    to and from blocks of bytes
+  package_url: https://www.nuget.org/System.Text.Encoding
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12933/default_e43fb8cd51d87352a1197706afa527de5c3baecd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Text.Encoding.Extensions
+  description: Provides support for specific encodings, including ASCII, UTF-7, UTF-8,
+    UTF-16, and UTF-32
+  package_url: https://www.nuget.org/System.Text.Encoding.Extensions
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12973/default_3bbc310dbe28a83b0e799743dc3f0afaa77665c9.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Text.RegularExpressions
+  description: Provides the System.Text.RegularExpressions.Regex class, an implementation
+    of a regular expression engine
+  package_url: https://www.nuget.org/System.Text.RegularExpressions
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12916/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+  vulnerabilities:
+  - name: Regular Expression Denial of Service in System.Text.RegularExpressions
+    cve_id: CVE-2019-0820
+    cve_url: https://github.com/advisories/GHSA-cmhx-cq75-c4mj
+    detected_date: Aug 22
+    severity: high
+    first_patched: 4.3.1
+- name: System.Threading
+  description: Provides the fundamental synchronization primitives, including System.Threading.Monitor
+    and System.Threading.Mutex, that are required when writing asynchronous code
+  package_url: https://www.nuget.org/System.Threading
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12861/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Threading.Tasks
+  description: Provides types that simplify the work of writing concurrent and asynchronous
+    code
+  package_url: https://www.nuget.org/System.Threading.Tasks
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12899/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Threading.Tasks.Extensions
+  description: Provides additional types that simplify the work of writing concurrent
+    and asynchronous code
+  package_url: https://www.nuget.org/System.Threading.Tasks.Extensions
+  version: 4.5.3
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12998/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:51.000000000 Z
+- name: System.Threading.Timer
+  description: Provides the System.Threading.Timer class, which is a mechanism for
+    executing a method at specified intervals
+  package_url: https://www.nuget.org/System.Threading.Timer
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13016/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Xml.ReaderWriter
+  description: Provides provides a fast, non-cached, forward-only way to read and
+    write Extensible Markup Language
+  package_url: https://www.nuget.org/System.Xml.ReaderWriter
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12962/default_bd8397841d0aa5de035298a9130ee2dc9d9b0ece.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
+- name: System.Xml.XDocument
+  description: Provides the classes for Language-Integrated Query
+  package_url: https://www.nuget.org/System.Xml.XDocument
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12964/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-04-05 15:54:49.000000000 Z
