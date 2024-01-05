@@ -1,7 +1,8 @@
 repo_name: Seddryck/NBi.Gremlin
 report_id: dc5f1ba6c7b7b4cf04eb15ba2ea7e4e1
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T20:21:54+00:00'
+timestamp: '2024-01-05T08:48:23+00:00'
 requested_by: Seddryck
 provider: github
 branch: master
@@ -17,8 +18,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png
-  detection_source_url: NBi.Core.Gremlin/NBi.Core.Gremlin.csproj
-  detection_source: NBi.Testing.Core.Gremlin/NBi.Testing.Core.Gremlin.csproj
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/NBi.Core.Gremlin.csproj
+  detection_source: NBi.Core.Gremlin/NBi.Core.Gremlin.csproj
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-22 08:54:46.000000000 Z
 - name: C#
@@ -30,6 +31,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin
   detection_source: Repo Metadata
 - name: F#
   description: Strongly-typed, functional-first programming language for writing simple
@@ -42,8 +44,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2155/yRNL7yTW.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-27 07:39:50.000000000 Z
 - name: ".NET"
@@ -56,6 +58,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-05 00:43:40.000000000 Z
@@ -67,7 +70,8 @@ tools:
   category: Monitoring
   sub_category: Logging Tools
   image_url: https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Git
@@ -78,6 +82,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin
   detection_source: Repo Metadata
 - name: Moq
   description: The most popular and friendly mocking framework for .NET
@@ -87,7 +92,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1628/1434934.png
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-27 07:39:50.000000000 Z
 - name: NUnit
@@ -98,7 +104,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Ninject
@@ -109,7 +116,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Game Development
   image_url: https://img.stackshare.io/service/3173/default_85e419b9c60b158340e534d5006d949015ec16e4.png
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-27 12:10:47.000000000 Z
 - name: NuGet
@@ -120,6 +128,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-22 08:54:46.000000000 Z
@@ -132,6 +141,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.sln
   detection_source: NBi.Gremlin.sln
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
@@ -144,6 +154,7 @@ tools:
   category: Application Hosting
   sub_category: Cloud Hosting
   image_url: https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
@@ -155,6 +166,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/3681/powershell-logo.png
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin
   detection_source: Repo Metadata
 - name: RestSharp
   description: Simple REST and HTTP API Client for .NET
@@ -165,7 +177,8 @@ tools:
   category: Application Utilities
   sub_category: API Tools
   image_url: https://img.stackshare.io/service/20915/default_445d4e39e5f74faa53e6902cd6d552ff56c3a0a3.png
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
 - name: Antlr
@@ -178,8 +191,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13151/default_048f7c1081704627a12b8b5e168cfdbc9f28fb33.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Antlr3.Runtime
@@ -193,8 +206,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14561/default_2cdecae299b16f7e5120392b94415caf67b24d08.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Antlr4.StringTemplate
@@ -206,7 +219,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14774/default_d4bab497d6f953a185d2fc07e88b123334dde672.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
   detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
@@ -221,8 +234,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14739/default_ed2dff93c8ef09716d4634464fe3965af887d3ba.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
 - name: Dynamitey
@@ -235,8 +248,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14494/default_173ec891280076d3562de36695be599c5f63d489.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: FSharp.Core
@@ -250,8 +263,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12867/default_d56a77cbb06d3dae6daef9669108e3e01d2494af.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
 - name: ImpromptuInterface
@@ -264,8 +277,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13836/default_e1674c8c6a68d9256ef572438afba2230ecc5522.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Microsoft.AnalysisServices.AdomdClient
@@ -278,7 +291,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/15479/default_3738187338acc57863a0dd0dda89ecbfed6fcc63.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
   detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:51.000000000 Z
@@ -292,7 +305,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13231/default_44258eb565a346d4baf5243c0df2a219253fec1a.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
@@ -307,7 +320,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12845/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
@@ -322,8 +335,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12907/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: Microsoft.SqlServer.SqlManagementObjects
@@ -335,7 +348,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13830/default_4ee67dce9c0f5d6ba4c7dfc02ceb6746fd996f32.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
   detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-02-06 17:20:31.000000000 Z
@@ -348,8 +361,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13149/default_048f7c1081704627a12b8b5e168cfdbc9f28fb33.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: NETStandard.Library
@@ -362,8 +375,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12843/default_0f5233770e71818507f2339042e7e61bef904e70.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-22 08:54:46.000000000 Z
 - name: NUnit.Runners
@@ -376,8 +389,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13862/default_f71362d5cdd81a1583eb441b931fae9d72ff1211.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
 - name: NUnitTestAdapter
@@ -389,7 +402,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/14014/default_eda5fda8a13db51fe1af0908a714036e1ba79510.png
-  detection_source_url: NBi.Testing.Core.Gremlin.Unit/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin.Unit/packages.config
   detection_source: NBi.Testing.Core.Gremlin.Unit/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-05 00:43:40.000000000 Z
@@ -403,13 +416,19 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2020-01-04 14:27:32.000000000 Z
   vulnerabilities:
-  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+  - name: 'Duplicate Advisory: Improper Handling of Exceptional Conditions in Newtonsoft.Json'
     cve_id: 
+    cve_url: https://github.com/advisories/GHSA-8rfx-6mr3-5jh3
+    detected_date: Jan 4
+    severity: high
+    first_patched: 13.0.1
+  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+    cve_id: CVE-2024-21907
     cve_url: https://github.com/advisories/GHSA-5crp-9r3c-p9vr
     detected_date: Jun 23
     severity: high
@@ -424,7 +443,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13233/default_cadeaa4a9968284dcd1223273394c410c31c9d09.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
   detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2018-04-27 07:39:50.000000000 Z
@@ -438,8 +457,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13144/default_a5e8cd728170fc92850284a53a17ff7deb73f318.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Buffers
@@ -452,7 +471,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13038/default_a0b0eac5a401515996bd8fc359ffcfbc844cbe90.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:56:26.000000000 Z
@@ -465,8 +484,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12855/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Collections.Concurrent
@@ -480,8 +499,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12925/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Console
@@ -494,8 +513,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12992/default_971bb108ce002c2032e407a9046135e1542c46c7.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Diagnostics.Debug
@@ -508,8 +527,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12887/default_e43fb8cd51d87352a1197706afa527de5c3baecd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Diagnostics.DiagnosticSource
@@ -522,8 +541,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13012/default_dd10728859f7e363ef13345d855b2daba48cace4.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Gremlin.Bindings/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Diagnostics.Tools
@@ -536,8 +555,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12946/default_3bbc310dbe28a83b0e799743dc3f0afaa77665c9.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Diagnostics.Tracing
@@ -550,8 +569,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13072/default_a057bdad489be3cb053d372a68695da4ac94962d.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Globalization
@@ -563,8 +582,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12895/default_4e8402857d2ce7356903ee7422d9b4a0f23cc137.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Globalization.Calendars
@@ -577,8 +596,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13335/default_9a849f196ca7930b27f663ae8f15c937ea1b49e5.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.IO
@@ -590,8 +609,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12901/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.IO.Compression
@@ -604,8 +623,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12997/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.IO.Compression.ZipFile
@@ -618,8 +637,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13240/default_43ce02ab18bb400d4d6b410ac4dc3a50f87e634a.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.IO.FileSystem
@@ -632,8 +651,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12931/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.IO.FileSystem.Primitives
@@ -645,8 +664,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13111/default_623cfb3f5700f77ec1aadc91de41d13f3aa2ae3d.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Linq
@@ -659,8 +678,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12857/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Linq.Expressions
@@ -673,8 +692,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12924/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Memory
@@ -686,7 +705,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12974/default_d871263d8798790404638a4d3692cc70b6389166.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:56:26.000000000 Z
@@ -699,8 +718,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12860/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Net.Http.WinHttpHandler
@@ -714,7 +733,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13507/default_311009104e9efa41dc477451d8d60c2d0cbe7895.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:56:26.000000000 Z
@@ -735,8 +754,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12985/default_dd10728859f7e363ef13345d855b2daba48cace4.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Net.Sockets
@@ -749,8 +768,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13036/default_a0b0eac5a401515996bd8fc359ffcfbc844cbe90.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Net.WebSockets
@@ -763,8 +782,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13619/default_454cc9675bfcd9d7cf7256a128a70b1b339fad1e.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Net.WebSockets.Client
@@ -777,8 +796,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13534/default_acafa9133bcbebb2b966c9340c23194c2f9bf7bc.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Numerics.Vectors
@@ -791,7 +810,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13087/default_1b8be57b16f1f491c0e5f67e5d1021f4df68ea30.png
-  detection_source_url: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Testing.Core.Gremlin/packages.config
   detection_source: NBi.Testing.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:56:26.000000000 Z
@@ -805,8 +824,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12994/default_971bb108ce002c2032e407a9046135e1542c46c7.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Reflection
@@ -819,8 +838,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12874/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Reflection.Extensions
@@ -832,8 +851,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12900/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Reflection.Primitives
@@ -845,8 +864,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13006/default_12f7186a6d439da94c192c70c3589768d943782d.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Reflection.TypeExtensions
@@ -860,8 +879,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12876/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Resources.ResourceManager
@@ -874,8 +893,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12898/default_1763b424d3c06c730dd020813f1a1a6ffb953bc2.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime
@@ -887,8 +906,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12849/default_0f5233770e71818507f2339042e7e61bef904e70.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime.Extensions
@@ -901,8 +920,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12872/default_1763b424d3c06c730dd020813f1a1a6ffb953bc2.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime.Handles
@@ -916,8 +935,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13103/default_9a42ff760d96a634e61dad6d7a7d76e2d1506229.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime.InteropServices
@@ -929,8 +948,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12908/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime.InteropServices.RuntimeInformation
@@ -942,8 +961,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12960/default_cd4457378b2b3dee674f43707df49edfbc5c04e5.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Runtime.Numerics
@@ -957,8 +976,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13039/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Security.Cryptography.Algorithms
@@ -971,8 +990,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12929/default_039376cf26bae25623c106aea6185b89980a1e50.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Security.Cryptography.Encoding
@@ -984,8 +1003,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13179/default_42e87535b59c0cd77a89678c1c4ed24abc143f58.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Security.Cryptography.Primitives
@@ -997,8 +1016,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13109/default_f0c74e534077001eb65a152707758ce46a2dc970.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Security.Cryptography.X509Certificates
@@ -1011,8 +1030,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13009/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Text.Encoding
@@ -1025,8 +1044,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12933/default_e43fb8cd51d87352a1197706afa527de5c3baecd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Text.Encoding.Extensions
@@ -1039,8 +1058,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12973/default_3bbc310dbe28a83b0e799743dc3f0afaa77665c9.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Text.RegularExpressions
@@ -1053,8 +1072,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12916/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
   vulnerabilities:
@@ -1074,8 +1093,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12861/default_3ee9e3bfd65cbae9db28ab78b712a58bcd81af27.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Threading.Tasks
@@ -1088,8 +1107,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12899/default_4b18ad6ce0b5b2bd1dc822207c362ce8e0f74098.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Threading.Tasks.Extensions
@@ -1102,8 +1121,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12998/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: NBi.Gremlin.Bindings/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Gremlin.Bindings/packages.config
+  detection_source: NBi.Gremlin.Bindings/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:51.000000000 Z
 - name: System.Threading.Timer
@@ -1116,8 +1135,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13016/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Xml.ReaderWriter
@@ -1130,8 +1149,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12962/default_bd8397841d0aa5de035298a9130ee2dc9d9b0ece.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
 - name: System.Xml.XDocument
@@ -1143,7 +1162,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12964/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: NBi.Core.Gremlin/packages.config
-  detection_source: NBi.Testing.Core.Gremlin/packages.config
+  detection_source_url: https://github.com/Seddryck/NBi.Gremlin/blob/master/NBi.Core.Gremlin/packages.config
+  detection_source: NBi.Core.Gremlin/packages.config
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-04-05 15:54:49.000000000 Z
