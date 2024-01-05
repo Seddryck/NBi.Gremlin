@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 Seddryck/NBi.Gremlin is built on the following main stack:
+
 - [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
 - [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
 - [C#](http://csharp.net) – Languages
@@ -16,11 +17,13 @@ Seddryck/NBi.Gremlin is built on the following main stack:
 - [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 Seddryck/NBi.Gremlin is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg' alt='Microsoft Azure'/> [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
 - <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png' alt='C#'/> [C#](http://csharp.net) – Languages
@@ -35,14 +38,15 @@ Seddryck/NBi.Gremlin is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png' alt='Castle Core'/> [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [Seddryck/NBi.Gremlin](https://github.com/Seddryck/NBi.Gremlin)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|83<br/>Tools used|11/12/23 <br/>Report generated|
+|83<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -206,7 +210,7 @@ Full tech stack [here](/techstack.md)
 |[NETStandard.Library](https://www.nuget.org/NETStandard.Library)|v1.6.1|04/22/18|Cédric L. Charlier |N/A|N/A|
 |[NUnit.Runners](https://www.nuget.org/NUnit.Runners)|v2.7.1|01/04/20|Cédric L. Charlier |N/A|N/A|
 |[NUnitTestAdapter](https://www.nuget.org/NUnitTestAdapter)|v2.2.0|01/05/20|Cédric L. Charlier |N/A|N/A|
-|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v12.0.3|01/04/20|Cédric L. Charlier |MIT|[](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
+|[Newtonsoft.Json](https://www.nuget.org/Newtonsoft.Json)|v12.0.3|01/04/20|Cédric L. Charlier |MIT|[](https://github.com/advisories/GHSA-8rfx-6mr3-5jh3) (High)<br/>[CVE-2024-21907](https://github.com/advisories/GHSA-5crp-9r3c-p9vr) (High)|
 |[Sprache](https://www.nuget.org/Sprache)|v2.1.2|04/27/18|Cédric L. Charlier |MIT|N/A|
 |[System.AppContext](https://www.nuget.org/System.AppContext)|v4.3.0|04/05/21|dependabot[bot] |N/A|N/A|
 |[System.Buffers](https://www.nuget.org/System.Buffers)|v4.5.0|04/05/21|dependabot[bot] |N/A|N/A|
@@ -263,4 +267,4 @@ Full tech stack [here](/techstack.md)
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
