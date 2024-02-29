@@ -3,18 +3,18 @@
 ## Tech Stack
 Seddryck/NBi.Gremlin is built on the following main stack:
 
-- [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
-- [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- [ASP.NET](https://www.asp.net/) – Languages
 - [C#](http://csharp.net) – Languages
-- [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
-- [Moq](https://github.com/Moq/moq4) – Testing Frameworks
 - [F#](http://fsharp.org/) – Languages
+- [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- [Castle Core](https://github.com/castleproject/Core) – Logging Tools
+- [Moq](https://github.com/Moq/moq4) – Testing Frameworks
 - [NUnit](http://www.nunit.org/) – Testing Frameworks
 - [Ninject](http://www.ninject.org) – Dependency Management
+- [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
+- [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
 - [PowerShell](https://docs.microsoft.com/en-us/powershell/) – Shells
-- [ASP.NET](https://www.asp.net/) – Languages
 - [RestSharp](https://restsharp.dev/) – API Tools
-- [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
 
@@ -24,18 +24,18 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 Seddryck/NBi.Gremlin is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg' alt='Microsoft Azure'/> [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
-- <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- <img width='25' height='25' src='https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png' alt='ASP.NET'/> [ASP.NET](https://www.asp.net/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png' alt='C#'/> [C#](http://csharp.net) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1451/SR2hUhQN.png' alt='Visual Studio'/> [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
-- <img width='25' height='25' src='https://img.stackshare.io/service/1628/1434934.png' alt='Moq'/> [Moq](https://github.com/Moq/moq4) – Testing Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/2155/yRNL7yTW.png' alt='F#'/> [F#](http://fsharp.org/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1014/IoPy1dce_400x400.png' alt='.NET'/> [.NET](http://www.microsoft.com/net/) – Frameworks (Full Stack)
+- <img width='25' height='25' src='https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png' alt='Castle Core'/> [Castle Core](https://github.com/castleproject/Core) – Logging Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/1628/1434934.png' alt='Moq'/> [Moq](https://github.com/Moq/moq4) – Testing Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png' alt='NUnit'/> [NUnit](http://www.nunit.org/) – Testing Frameworks
 - <img width='25' height='25' src='https://img.stackshare.io/service/3173/default_85e419b9c60b158340e534d5006d949015ec16e4.png' alt='Ninject'/> [Ninject](http://www.ninject.org) – Dependency Management
+- <img width='25' height='25' src='https://img.stackshare.io/service/1451/SR2hUhQN.png' alt='Visual Studio'/> [Visual Studio](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx) – Integrated Development Environment
+- <img width='25' height='25' src='https://img.stackshare.io/service/213/default_88defae415fcb9cd0ac5d36c1ed27e74133c6287.jpg' alt='Microsoft Azure'/> [Microsoft Azure](https://azure.microsoft.com/en-us/) – Cloud Hosting
 - <img width='25' height='25' src='https://img.stackshare.io/service/3681/powershell-logo.png' alt='PowerShell'/> [PowerShell](https://docs.microsoft.com/en-us/powershell/) – Shells
-- <img width='25' height='25' src='https://img.stackshare.io/service/6755/2c45151a4a11d3a3c8e71bb34dd069d6_400x400.png' alt='ASP.NET'/> [ASP.NET](https://www.asp.net/) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/20915/default_445d4e39e5f74faa53e6902cd6d552ff56c3a0a3.png' alt='RestSharp'/> [RestSharp](https://restsharp.dev/) – API Tools
-- <img width='25' height='25' src='https://img.stackshare.io/service/20916/default_6d17162c9963bc83521ee29cf394f349c95173f3.png' alt='Castle Core'/> [Castle Core](https://github.com/castleproject/Core) – Logging Tools
 
 Full tech stack [here](/techstack.md)
 
@@ -46,7 +46,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [Seddryck/NBi.Gremlin](https://github.com/Seddryck/NBi.Gremlin)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|83<br/>Tools used|01/05/24 <br/>Report generated|
+|83<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
